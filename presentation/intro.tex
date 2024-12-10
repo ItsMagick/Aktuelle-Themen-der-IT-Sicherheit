@@ -2,12 +2,33 @@
 %! Date = 12/9/24
 
 \section{Einführung}\label{sec:einfuhrung}
-\begin{frame}{CVE-2023-43641}
+\begin{frame}{Was ist Fuzzing?}
+    \blockquote{\enquote{Fuzzing is a vulnerability discovery solution that resonates with random-mutation, feedback-driven,
+        coverage-guided, constraint-guided, seed-scheduling, and target-oriented strategies.
+        Each technique is wrapped beneath the black-, white-, and grey-box fuzzers to uncover diverse vulnerabilities.}Sanoop et al.~\cite{fuzzing_methods}}
+\end{frame}
+\begin{frame}{Was ist Fuzzing?}
     \begin{itemize}
-        \item Entdeckt am 09.10.2023 durch Kevin Backhouse
-        \item Schwachstelle in der Implementierung von libcue
-        \item Verwendet durch tracker-miner in GNOME
-        \item Automatisches Indizieren von heruntergeladenen Dateien
-        \item Interpretation der Indizes innerhalb einer \alert{.cue} Datei
+        \item Fuzzing ist eine Methode zur Entdeckung von Schwachstellen in Software.
+        \item Es gibt verschiedene Arten von Fuzzing-Methoden.
+        \item Methoden: Black-, White- und Grey-Box Fuzzing.
+    \end{itemize}
+\end{frame}
+\begin{frame}{Fuzzing Methoden}
+    \begin{itemize}
+        \item Black-Box Fuzzing: Keine Kenntnis über den Quellcode.
+        \item White-Box Fuzzing: Kenntnis über den Quellcode.
+        \item Grey-Box Fuzzing: Teilweise Kenntnis über den Quellcode.
+    \end{itemize}
+\end{frame}
+%TODO : Missverständnis von Testing zu Fuzzing klären.
+\begin{frame}{Fuzzing Anwendungsgebiete}
+    \begin{itemize}
+        \item Binary Fuzzing
+        \item Betriebssystem Fuzzing
+        \item Netzwerkprotokoll Fuzzing
+        \item Firmware Fuzzing
+        \item IoT/Embedded Fuzzing
+        \item \ldots
     \end{itemize}
 \end{frame}
