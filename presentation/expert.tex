@@ -1,0 +1,54 @@
+%! Author = chaorn
+%! Date = 11.12.24
+
+\section{Machine Learning und Fuzzing}\label{sec:machine-learning-und-fuzzing}
+\begin{frame}{Machine Learning und Fuzzing}
+    Wieso Machine Learning und Fuzzing?
+    \begin{itemize}
+        \item Machine Learning kann interessante Eingaben vorhersagen
+        \item Komplexe Strukturen von Eingaben können erkannt werden
+        \item Verbessertes Verständnis von Code(-fehl-)verhalten
+    \end{itemize}
+\end{frame}
+\begin{frame}{Begin von Machine Learning und Fuzzing}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=\textwidth]{res/pulsar}
+        \caption[Pioniere des Fuzzing mit Machine Learning]{
+            Veröffentlichung des ersten Fuzzers mit statistischen Modellen~\cite{thuraisingham_pulsar_2015}
+        }
+        \label{fig:ml_fuzzing}
+    \end{figure}
+\end{frame}
+\begin{frame}{Pulsar}
+    \begin{itemize}
+        \item Erster Fuzzer mit \enquote{Machine Learning}
+        \item Verwendung von Markov-Modellen
+        \item Erkennt und simuliert Zustände
+        \item Erkennt und simuliert Nachrichten
+        \item Kann sowohl ein Protokoll simulieren, als auch das tatsächliche Protokoll fuzzen
+    \end{itemize}
+\end{frame}
+\section{Demo}\label{sec:demo}
+\begin{itemize}
+    \item Role of Convolutional Neural Networks in fuzzing:
+    \begin{itemize}
+        \item Analyzing code structure and coverage patterns.
+        \item Input prioritization using learned models.
+    \end{itemize}
+        \item Feature extraction from execution traces and call graphs.
+        \item Example application: Predicting program branches that require exploration.
+\end{itemize}
+
+\begin{itemize}
+    \item Challenges in using ML for fuzzing:
+    \begin{itemize}
+        \item High computational requirements.
+        \item Training data scarcity for certain domains.
+    \end{itemize}
+    \item Future possibilities:
+    \begin{itemize}
+        \item Reinforcement learning for fuzzing optimization.
+        \item Transfer learning to adapt fuzzers to new domains.
+    \end{itemize}
+\end{itemize}

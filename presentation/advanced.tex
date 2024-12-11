@@ -1,0 +1,66 @@
+%! Author = chaorn
+%! Date = 11.12.24
+
+\section{Das innere eines Fuzzers}\label{sec:das-innere-eines-fuzzers}
+\begin{frame}{Was steckt in einem Fuzzer?}
+    \begin{itemize}
+        \item \alert{Corpus}
+        \item Input Generator
+        \item Mutator
+        \item Laufzeitumgebung für das zu untersuchende System
+        \item Monitoring
+        \item \alert{Strategie}
+    \end{itemize}
+\end{frame}
+\begin{frame}{Corpus}
+    \begin{itemize}
+        \item Sammlung von Testcases
+        \item Wird durch den Fuzzer verwaltet
+        \item Wird durch den Fuzzer erweitert
+        \item Wird durch den Fuzzer verkleinert
+    \end{itemize}
+\end{frame}
+\begin{frame}{Input Generator}
+    \begin{itemize}
+        \item Generiert Testcases
+        \item Kann auf verschiedene Arten implementiert sein
+        \item Kann auf verschiedene Arten konfiguriert werden
+    \end{itemize}
+\end{frame}
+\begin{frame}{Mutator}
+    \begin{itemize}
+        \item Verändert Testcases
+        \item Kann auf verschiedene Arten implementiert sein
+        \item Kann auf verschiedene Arten konfiguriert werden
+    \end{itemize}
+\end{frame}
+\begin{frame}{Laufzeitumgebung}
+    \begin{itemize}
+        \item Stellt das zu untersuchende System bereit
+        \item Kann auf verschiedene Arten implementiert sein
+        \item Kann auf verschiedene Arten konfiguriert werden
+    \end{itemize}
+\end{frame}
+\begin{frame}{Monitoring}
+    \begin{itemize}
+        \item Überwacht das zu untersuchende System
+        \item Kann auf verschiedene Arten implementiert sein
+        \item Kann auf verschiedene Arten konfiguriert werden
+    \end{itemize}
+\end{frame}
+\begin{frame}{Strategie}
+    \begin{itemize}
+        \item Steuert den Ablauf des Fuzzers
+        \item Kann auf verschiedene Arten implementiert sein
+        \item Kann auf verschiedene Arten konfiguriert werden
+    \end{itemize}
+\end{frame}
+
+\section{Techniken des Fuzzings}\label{sec:techniken-des-fuzzings}
+\begin{frame}{Techniken des Fuzzings}
+    \begin{itemize}
+        \item Mutation (AFL)
+        \item Generation (boofuzz)
+        \item \alert{Machine Learning \& AI} (Pulsar)
+    \end{itemize}
+\end{frame}

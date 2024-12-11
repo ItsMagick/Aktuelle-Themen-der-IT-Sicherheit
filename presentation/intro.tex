@@ -9,19 +9,28 @@
 \end{frame}
 \begin{frame}{Was ist Fuzzing?}
     \begin{itemize}
-        \item Fuzzing ist eine Methode zur Entdeckung von Schwachstellen in Software.
-        \item Es gibt verschiedene Arten von Fuzzing-Methoden.
-        \item Methoden: Black-, White- und Grey-Box Fuzzing.
+        \item Fuzzing ist eine Methode zur Entdeckung von Schwachstellen in Software
+        \item Es gibt verschiedene Arten von Fuzzing-Methoden
+        \item Methoden: Black-, White- und Grey-Box Fuzzing
     \end{itemize}
 \end{frame}
 \begin{frame}{Fuzzing Methoden}
     \begin{itemize}
-        \item Black-Box Fuzzing: Keine Kenntnis über den Quellcode.
-        \item White-Box Fuzzing: Kenntnis über den Quellcode.
-        \item Grey-Box Fuzzing: Teilweise Kenntnis über den Quellcode.
+        \item Black-Box Fuzzing: Keine Kenntnis über den Quellcode
+        \item White-Box Fuzzing: Kenntnis über den Quellcode
+        \item Grey-Box Fuzzing: Teilweise Kenntnis über den Quellcode
     \end{itemize}
 \end{frame}
 %TODO : Missverständnis von Testing zu Fuzzing klären.
+\begin{frame}{Wieso Fuzzing?}
+    Fuzzing ist eine:
+    \begin{itemize}
+        \item Effektive Methode zur Entdeckung von Schwachstellen
+        \item Automatisierte Methode
+        \item Schnelle(-re?) Methode
+        \item Kostengünstige Methode
+    \end{itemize}
+\end{frame}
 \begin{frame}{Fuzzing Anwendungsgebiete}
     \begin{itemize}
         \item Binary Fuzzing
@@ -30,5 +39,43 @@
         \item Firmware Fuzzing
         \item IoT/Embedded Fuzzing
         \item \ldots
+    \end{itemize}
+\end{frame}
+\begin{frame}{Wie Funktionert Fuzzing?}
+    \begin{tikzpicture}[node distance=2.5cm]
+        \node[draw, rectangle, rounded corners, minimum height=1cm, minimum width=2.5cm] (testcase) {\textbf{Initial Testcase}};
+        \node[draw, rectangle, rounded corners, minimum height=1cm, minimum width=2.5cm, right of=testcase, xshift=1.8cm] (dryrun) {\textbf{Dry Run}};
+        \node[draw, rectangle, rounded corners, minimum height=1cm, minimum width=2.5cm, right of=dryrun, xshift=1.4cm] (mutator) {\textbf{Mutator}};
+        \node[draw, rectangle, rounded corners, minimum height=1cm, minimum width=2.5cm, below of=dryrun] (program) {\textbf{Program unter Test}};
+        \node[draw, ellipse, minimum height=1cm, minimum width=2.2cm, right of=program, xshift=1.4cm] (feedback) {\textbf{Feedback}};
+
+        \draw[->, thick] (testcase) -- (dryrun);
+        \draw[->, thick] (dryrun) -- (mutator);
+        \draw[->, thick] (mutator) -- (program);
+        \draw[->, thick] (program) -- (feedback);
+        \draw[->, thick] (feedback) -- (mutator);
+    \end{tikzpicture}
+\end{frame}
+\begin{frame}{Wie Funktionert Fuzzing?}
+    \begin{tikzpicture}[node distance=2.5cm]
+        \node[draw, rectangle, rounded corners, minimum height=1cm, minimum width=2.5cm, fill=blue!10] (testcase) {\textbf{Initial Testcase}};
+        \node[draw, rectangle, rounded corners, minimum height=1cm, minimum width=2.5cm, right of=testcase, xshift=1.8cm] (dryrun) {\textbf{Dry Run}};
+        \node[draw, rectangle, rounded corners, minimum height=1cm, minimum width=2.5cm, right of=dryrun, xshift=1.4cm, fill=blue!10] (mutator) {\textbf{Mutator}};
+        \node[draw, rectangle, rounded corners, minimum height=1cm, minimum width=2.5cm, below of=dryrun] (program) {\textbf{Program unter Test}};
+        \node[draw, ellipse, minimum height=1cm, minimum width=2.2cm, right of=program, xshift=1.4cm, fill=blue!10] (feedback) {\textbf{Feedback}};
+
+        \draw[->, thick] (testcase) -- (dryrun);
+        \draw[->, thick] (dryrun) -- (mutator);
+        \draw[->, thick] (mutator) -- (program);
+        \draw[->, thick] (program) -- (feedback);
+        \draw[->, thick] (feedback) -- (mutator);
+    \end{tikzpicture}
+\end{frame}
+\begin{frame}{Herausforderung von Fuzzing}
+    \begin{itemize}
+        \item Lückenhafte Codeabdeckung
+        \item Unzureichende Testfälle
+        \item Verstehen von komplexen Codepfaden
+        \item Nichtdeterministische Programme und Zustandsabhängige Systeme
     \end{itemize}
 \end{frame}
