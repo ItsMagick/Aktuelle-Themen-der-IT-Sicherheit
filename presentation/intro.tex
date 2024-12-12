@@ -8,13 +8,18 @@
         Each technique is wrapped beneath the black-, white-, and grey-box fuzzers to uncover diverse vulnerabilities.}Sanoop et al.~\cite{fuzzing_methods}}
 \end{frame}
 \begin{frame}{Was ist Fuzzing?}
+    \blockquote{\enquote{Fuzzing is a \alert{vulnerability discovery solution} that resonates with random-mutation, feedback-driven,
+        coverage-guided, constraint-guided, seed-scheduling, and target-oriented \alert{strategies}.
+        Each \alert{technique} is wrapped beneath the black-, white-, and grey-box fuzzers to uncover diverse vulnerabilities.}Sanoop et al.~\cite{fuzzing_methods}}
+\end{frame}
+\begin{frame}{Was ist Fuzzing?}
     \begin{itemize}
         \item Fuzzing ist eine Methode zur Entdeckung von Schwachstellen in Software
-        \item Es gibt verschiedene Arten von Fuzzing-Methoden
-        \item Methoden: Black-, White- und Grey-Box Fuzzing
+        \item Es gibt verschiedene Arten von Fuzzing-Ansätzen
+        \item Diese Ansätze werden mit verschiedenen Strategien kombiniert
     \end{itemize}
 \end{frame}
-\begin{frame}{Fuzzing Methoden}
+\begin{frame}{Fuzzing Ansätze}
     \begin{itemize}
         \item Black-Box Fuzzing: Keine Kenntnis über den Quellcode
         \item White-Box Fuzzing: Kenntnis über den Quellcode
@@ -71,6 +76,7 @@
         \draw[->, thick] (feedback) -- (mutator);
     \end{tikzpicture}
 \end{frame}
+\section{Demo}\label{sec:demo2}
 \begin{frame}{Herausforderung von Fuzzing}
     \begin{itemize}
         \item Lückenhafte Codeabdeckung
