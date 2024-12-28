@@ -4,7 +4,7 @@ set -ex
 find . \
       \( -iname '*.out' -o -iname '*.toc' -o  -iname '*.log' -o -iname '*.aux' -o -iname '*.dvi' -o -iname '*.lol' -o \
       -iname '*.lof' -o -iname '*.run.xml' -o -iname '*.fdb_latexmk' -o -iname '*.fls' -o -iname '*.bbl' -o \
-      -iname '*.bcf' -o -iname '*.blg' -o -iname '*.lot' \) \
+      -iname '*.bcf' -o -iname '*.blg' -o -iname '*.lot' -o -iname '*.nav' -o -iname '*.snm' \) \
       -exec rm -R {} +
 docker run \
       --rm -t \
@@ -27,6 +27,6 @@ docker run \
 find . \
       \( -iname '*.out' -o -iname '*.toc' -o  -iname '*.log' -o -iname '*.aux' -o -iname '*.dvi' -o -iname '*.lol' -o \
       -iname '*.lof' -o -iname '*.run.xml' -o -iname '*.fdb_latexmk' -o -iname '*.fls' -o -iname '*.bbl' -o \
-      -iname '*.bcf' -o -iname '*.blg' -o -iname '*.lot' \) \
+      -iname '*.bcf' -o -iname '*.blg' -o -iname '*.lot' -o -iname '*.nav' -o -iname '*.snm' \) \
       -exec rm -R {} +
 
