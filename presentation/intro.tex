@@ -51,7 +51,7 @@
         \node[draw, rectangle, rounded corners, minimum height=1cm, minimum width=2.5cm] (testcase) {\textbf{Initial Testcase}};
         \node[draw, rectangle, rounded corners, minimum height=1cm, minimum width=2.5cm, right of=testcase, xshift=1.8cm] (dryrun) {\textbf{Dry Run}};
         \node[draw, rectangle, rounded corners, minimum height=1cm, minimum width=2.5cm, right of=dryrun, xshift=1.4cm] (mutator) {\textbf{Mutator}};
-        \node[draw, rectangle, rounded corners, minimum height=1cm, minimum width=2.5cm, below of=dryrun] (program) {\textbf{Program unter Test}};
+        \node[draw, rectangle, rounded corners, minimum height=1cm, minimum width=2.5cm, below of=dryrun] (program) {\textbf{Programm unter Test}};
         \node[draw, ellipse, minimum height=1cm, minimum width=2.2cm, right of=program, xshift=1.4cm] (feedback) {\textbf{Feedback}};
 
         \draw[->, thick] (testcase) -- (dryrun);
@@ -66,7 +66,7 @@
         \node[draw, rectangle, rounded corners, minimum height=1cm, minimum width=2.5cm, fill=blue!10] (testcase) {\textbf{Initial Testcase}};
         \node[draw, rectangle, rounded corners, minimum height=1cm, minimum width=2.5cm, right of=testcase, xshift=1.8cm] (dryrun) {\textbf{Dry Run}};
         \node[draw, rectangle, rounded corners, minimum height=1cm, minimum width=2.5cm, right of=dryrun, xshift=1.4cm, fill=blue!10] (mutator) {\textbf{Mutator}};
-        \node[draw, rectangle, rounded corners, minimum height=1cm, minimum width=2.5cm, below of=dryrun] (program) {\textbf{Program unter Test}};
+        \node[draw, rectangle, rounded corners, minimum height=1cm, minimum width=2.5cm, below of=dryrun] (program) {\textbf{Programm unter Test}};
         \node[draw, ellipse, minimum height=1cm, minimum width=2.2cm, right of=program, xshift=1.4cm, fill=blue!10] (feedback) {\textbf{Feedback}};
 
         \draw[->, thick] (testcase) -- (dryrun);
@@ -82,6 +82,6 @@
         \item Lückenhafte Codeabdeckung
         \item Unzureichende Testfälle
         \item Verstehen von komplexen Codepfaden
-        \item Nichtdeterministische Programme und Zustandsabhängige Systeme
+        \item Nichtdeterministische Programme und zustandsabhängige Systeme
     \end{itemize}
 \end{frame}

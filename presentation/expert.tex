@@ -23,7 +23,7 @@
         \centering
         \includegraphics[width=\textwidth]{res/pulsar}
         \caption[Pioniere des Fuzzing mit Machine Learning]{
-            Veröffentlichung des ersten Fuzzers mit statistischen Modellen~\cite{thuraisingham_pulsar_2015}
+            Veröffentlichung des ersten Fuzzers mit Markov Modellen~\cite{thuraisingham_pulsar_2015}
         }
         \label{fig:ml_fuzzing}
     \end{figure}
@@ -37,7 +37,6 @@
         \item Kann sowohl ein Protokoll simulieren, als auch das tatsächliche Protokoll fuzzen
     \end{itemize}
 \end{frame}
-\section{Demo}\label{sec:demo}
 \begin{frame}{Anwendungsfälle für Machine Learning und Fuzzing}
     \begin{itemize}
         \item Generierung von besseren Eingaben mittels Reinforcement Learning
@@ -51,7 +50,7 @@
     \begin{itemize}
         \item Hohe Rechenanforderungen
         \item Trainingsdatenknappheit in neuen und Nischen Domänen
-        \item Model Generalisierung zur Anwendbarkeit auf neue Domänen kann zu ungewolltem overfitting führen
+        \item Model Generalisierung zur Anwendbarkeit auf neue Domänen kann zu ungewolltem Overfitting führen
     \end{itemize}
 \end{frame}
 \begin{frame}{Ausblick}
@@ -60,7 +59,7 @@
         \item Fuzzer kann durch frei verfügbaren Netzwerkverkehr trainiert werden
         \item Eingaben sollen von bereits existierenden Netzwerkprotokollen abgeleitet werden und darin bereits
         enthaltene Fehler reproduzieren
-        \item Dynamische Analyse zur Laufzeit des Protokolls soll die Generierung der Eingaben durch reinforcement learning verbessern
+        \item Dynamische Analyse zur Laufzeit des Protokolls soll die Generierung der Eingaben durch Reinforcement Learning verbessern
         \item Crashes und Bugs sollen gelabelt werden, um die Qualität der Eingaben zu verbessern
         und die Schwere der Bugs zu klassifizieren
     \end{itemize}
