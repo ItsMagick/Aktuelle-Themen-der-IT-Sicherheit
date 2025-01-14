@@ -2,8 +2,9 @@ name: LaTeX document CD
 on:
   release:
     types: [created]
-  tag:
-    types: [created]
+  push:
+    tags:
+      - '**'
 jobs:
   build-and-release-presentation:
     runs-on: ubuntu-latest
