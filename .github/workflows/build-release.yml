@@ -2,6 +2,8 @@ name: LaTeX document CD
 on:
   release:
     types: [created]
+  tag:
+    types: [created]
 jobs:
   build-and-release-presentation:
     runs-on: ubuntu-latest
@@ -11,7 +13,7 @@ jobs:
       - name: Build and release LaTeX document
         uses: TemplatesHub/gh-action-latex-build-and-release@v2
         with:
-          tex-entry-point: 'Presentation.tex'
+          tex-entry-point: 'Presentation'
           pdf-name: 'Presentation'
   build-and-release-paper:
     runs-on: ubuntu-latest
@@ -21,5 +23,5 @@ jobs:
       - name: Build and release LaTeX document
         uses: TemplatesHub/gh-action-latex-build-and-release@v2
         with:
-          tex-entry-point: 'Documentation.tex'
+          tex-entry-point: 'Documentation'
           pdf-name: 'Documentation'
