@@ -1,0 +1,714 @@
+
+    CCS 2024
+        LIFTFUZZ: Validating Binary Lifters through Context-aware Fuzzing with GPT                                      1
+        FuzzCache: Optimizing Web Application Fuzzing Through Software-Based Data Cache
+        RANsacked: A Domain-Informed Approach for Fuzzing LTE and 5G RAN-Core Interfaces
+        RIoTFuzzer: Companion App Assisted Remote Fuzzing for Detecting Vulnerabilities in IoT Devices
+        On Understanding and Forecasting Fuzzers Performance with Static Analysis
+        FOX: Coverage-guided Fuzzing as Online Stochastic Control
+        Prompt Fuzzing for Fuzz Driver Generation
+        DarthShader: Fuzzing WebGPU Shader Translators & Compilers
+        Collapse Like A House of Cards: Hacking Building Automation System Through Fuzzing
+        OSmart: Whitebox Program Option Fuzzing
+        Program Environment Fuzzing
+        ProphetFuzz: Fully Automated Prediction and Fuzzing of High-Risk Option Combinations with Only Documentation via Large Language Model 2
+        Leveraging Binary Coverage for Effective Generation Guidance in Kernel Fuzzing
+        Toss a Fault to BpfChecker: Revealing Implementation Flaws for eBPF runtimes with Differential Fuzzing
+        No Peer, no Cry: Network Application Fuzzing via Fault Injection
+        Fuzz to the Future: Uncovering Occluded Future Vulnerabilities via Robust Fuzzing
+        CountDown: Refcount-guided Fuzzing for Exposing Temporal Memory Errors in Linux Kernel
+        Fuzzing JavaScript Engines with a Graph-based IR
+        CrossFire: Fuzzing macOS Cross-XPU Memory on Apple Silicon
+    ISSTA 2024
+        An Empirical Examination of Fuzzer Mutator Performance
+        AsFuzzer: Differential Testing of Assemblers with Error-Driven Grammar Inference
+        Atlas: Automating Cross-Language Fuzzing on Android Closed-Source Libraries
+        Dance of the ADS: Orchestrating Failures through Historically-Informed Scenario Fuzzing
+        DDGF: Dynamic Directed Greybox Fuzzing with Path Profiling
+        Enhancing ROS System Fuzzing through Callback Tracing
+        Fuzzing JavaScript Interpreters with Coverage-Guided Reinforcement Learning for LLM-Based Mutation              3
+        Fuzzing MLIR Compiler Infrastructure via Operation Dependency Analysis
+        How Effective Are They? Exploring Large Language Model Based Fuzz Driver Generation
+        Logos: Log Guided Fuzzing for Protocol Implementations
+        Midas: Mining Profitable Exploits in On-Chain Smart Contracts via Feedback-Driven Fuzzing and Differential Analysis
+        Tacoma: Enhanced Browser Fuzzing with Fine-Grained Semantic Alignment
+        Prospector: Boosting Directed Greybox Fuzzing for Large-Scale Target Sets with Iterative Prioritization
+        FRIES: Fuzzing Rust Library Interactions via Efficient Ecosystem-Guided Target Generation
+        Logos: Log Guided Fuzzing for Protocol Implementations
+        Policy Testing with MDPFuzz (Replicability Study)
+        Enhancing ROS System Fuzzing through Callback Tracing
+        Sleuth: A Switchable Dual-Mode Fuzzer to Investigate Bug Impacts Following a Single PoC
+    ESEC/FSE 2024
+        BRF: Fuzzing the eBPF runtime
+        Evaluating Directed Fuzzers: Are We Heading in the Right Direction?
+    SP 2024
+        Everything is Good for Something: Counterexample-Guided Directed Fuzzing via Likely Invariant Inference
+        LABRADOR: Response Guided Directed Fuzzing for Black-box IoT Devices
+        SoK: Prudent Evaluation Practices for Fuzzing
+        Titan: Efficient Multi-target Directed Greybox Fuzzing
+        Chronos: Finding Timeout Bugs in Practical Distributed Systems by Deep-Priority Fuzzing with Transient Delay
+        DY Fuzzing: Formal Dolev-Yao Models Meet Cryptographic Protocol Fuzz Testing
+        SyzGen++: Dependency Inference for Augmenting Kernel Driver Fuzzing
+        Towards Smart Contract Fuzzing on GPU
+        SATURN: Host-Gadget Synergistic USB Driver Fuzzing
+        To Boldly Go Where No Fuzzer Has Gone Before: Finding Bugs in Linux' Wireless Stacks through VirtIO Devices
+        Predecessor-aware Directed Greybox Fuzzing
+        AFGen: Whole-Function Fuzzing for Applications and Libraries
+        SyzTrust: State-aware Fuzzing on Trusted OS Designed for IoT Devices
+        LLMIF: Augmented Large Language Model for Fuzzing IoT Devices                                                   4
+    ICISSP 2024
+        Fuzzing Matter(s): A White Paper for Fuzzing the Matter Protocol
+    ICSE 2024
+        Fuzz4All: Universal Fuzzing with Large Language Models                                                          5
+        Large Language Models are Edge-Case Generators: Crafting Unusual Programs for Fuzzing Deep Learning Libraries
+        ECFuzz: Effective Configuration Fuzzing for Large-Scale Systems
+        EDEFuzz: A Web API Fuzzer for Excessive Data Exposures
+        FuzzSlice: Pruning False Positives in Static Analysis Warnings through Function-Level Fuzzing
+        Learning and Repair of Deep Reinforcement Learning Policies from Fuzz-Testing Data                              6
+        Reorder Pointer Flow in Sound Concurrency Bug Prediction
+        Are We There Yet? Unraveling the State-of-the-Art Smart Contract Fuzzers
+        Crossover in Parametric Fuzzing
+        Extrapolating Coverage Rate in Greybox Fuzzing
+        FuzzInMem: Fuzzing Programs via In-memory Structures
+        RPG: Rust Library Fuzzing with Pool-based Fuzz Target Generation and Generic Support
+        Sedar: Obtaining High-Quality Seeds for DBMS Fuzzing via Cross-DBMS SQL Transfer
+        SpecBCFuzz: Fuzzing LTL Solvers with Boundary Conditions
+    NDSS 2024
+        Large Language Model guided Protocol Fuzzing                                                                    7
+        DeepGo: Predictive Directed Greybox Fuzzing
+        ShapFuzz: Efficient Fuzzing via Shapley-Guided Byte Selection
+        EnclaveFuzz: Finding Vulnerabilities in SGX Applications
+        MOCK: Optimizing Kernel Fuzzing Mutation with Context-aware Dependency
+        EnclaveFuzz: Finding Vulnerabilities in SGX Applications
+        Predictive Context-sensitive Fuzzing
+        ReqsMiner: Automated Discovery of CDN Forwarding Request Inconsistencies and DoS Attacks with Grammar-based Fuzzing
+    USENIX Security 2024
+        Atropos: Effective Fuzzing of Web Applications for Server-Side Vulnerabilities
+        ResolverFuzz: Automated Discovery of DNS Resolver Vulnerabilities with Query-Response Fuzzing
+        Cascade: CPU Fuzzing via Intricate Program Generation
+        Towards Generic Database Management System Fuzzing
+        SHiFT: Semi-hosted Fuzz Testing for Embedded Applications
+        SDFuzz: Target States Driven Directed Fuzzing
+        Critical Code Guided Directed Greybox Fuzzing for Commits
+        EL3XIR: Fuzzing COTS Secure Monitors
+        MultiFuzz: A Multi-Stream Fuzzer For Testing Monolithic Firmware
+        WhisperFuzz: White-Box Fuzzing for Detecting and Locating Timing Vulnerabilities in Processors
+        HYPERPILL: Fuzzing for Hypervisor-bugs by leveraging the Hardware Virtualization Interface
+        Fuzzing BusyBox: Leveraging LLM and Crash Reuse for Embedded Bug Unearthing                                     8
+        From One Thousand Pages of Specification to Unveiling Hidden Bugs: Large Language Model Assisted Fuzzing of Matter IoT Devices 9
+        OptFuzz: Optimization Path Guided Fuzzing for JavaScript JIT Compilers
+        Toward Unbiased Multiple-Target Fuzzing with Path Diversity
+        SymBisect: Accurate Bisection for Fuzzer-Exposed Vulnerabilities
+        Data Coverage for Guided Fuzzing
+        LLM-Fuzzer: Scaling Assessment of Large Language Model Jailbreaks
+        Understanding Ethereum Mempool Security under Asymmetric DoS by Symbolized Stateful Fuzzing
+    ASPLOS 2024
+        Greybox Fuzzing for Concurrency Testing
+    OOPSLA 2024
+        WhiteFox: White-box Compiler Fuzzing Empowered by Large Language Models                                         9
+    Others 2024
+        Crash Report Accumulation During Continuous Fuzzing with CASR (IVMEM 2024)
+        CrossFuzz: Cross-contract fuzzing for smart contract vulnerability detection
+    MobiSys 2023
+        No More Companion Apps Hacking but One Dongle: Hub-Based Blackbox Fuzzing of IoT Firmware
+    ESORICS 2023
+        ResolFuzz: Differential Fuzzing of DNS Resolvers
+        Intelligent Zigbee Protocol Fuzzing via Constraint-Field Dependency Inference
+        LFuzz: Exploiting Locality-Enabled Techniques for File-System Fuzzing
+        SPLITS: Split Input-to-State Mapping for Effective Firmware Fuzzing
+        Forkfuzz: Leveraging the Fork-Awareness in Coverage-Guided Fuzzing
+    OOPSLA 2023
+        Accelerating Fuzzing through Prefix-Guided Execution
+        Towards Better Semantics Exploration for Browser Fuzzing
+    PLDI 2023
+        Fuzzing Loop Optimizations in Compilers for C++ and Data-Parallel Languages
+        WasmRef-Isabelle: a Verified Monadic Interpreter and Industrial Fuzzing Oracle for WebAssembly
+    S&P 2023
+        SelectFuzz: Efficient Directed Fuzzing with Selective Path Exploration
+        UTOPIA: Automatic Generation of Fuzz Driver using Unit Tests
+        TEEzz: Fuzzing Trusted Applications on COTS Android Devices
+        Toss a Fault to Your Witcher: Applying Grey-box Coverage-Guided Mutational Fuzzing to Detect SQL and Command Injection Vulnerabilities
+        Finding Specification Blind Spots via Fuzz Testing
+        SEGFUZZ: Segmentizing Thread Interleaving to Discover Kernel Concurrency Bugs through Fuzzing
+        RSFuzzer: Discovering Deep SMI Handler Vulnerabilities in UEFI Firmware with Hybrid Fuzzing
+        ODDFUZZ: Discovering Java Deserialization Vulnerabilities via Structure-Aware Directed Greybox Fuzzing
+        VIDEZZO: Dependency-aware Virtual Device Fuzzing
+        DEVFUZZ: Automatic Device Model-Guided Device Driver Fuzzing
+    CCS 2023
+        HOPPER: Interpretative Fuzzing for Libraries
+        Greybox Fuzzing of Distributed Systems
+        Fuzz on the Beach: Fuzzing Solana Smart Contracts
+        DSFuzz: Detecting Deep State Bugs with Dependent State Exploration
+        Profile-guided System Optimizations for Accelerated Greybox Fuzzing
+        NestFuzz: Enhancing Fuzzing with Comprehensive Understanding of Input Processing Logic
+        Greybox Fuzzing of Distributed Systems
+        SyzDirect: Directed Greybox Fuzzing for Linux Kernel
+        PyRTFuzz: Detecting Bugs in Python Runtimes via Two-Level Collaborative Fuzzing
+        Poster: Combining Fuzzing with Concolic Execution for IoT Firmware Testing
+    USENIX SEC 2023
+        FishFuzz: Catch Deeper Bugs by Throwing Larger Nets
+        MINER: A Hybrid Data-Driven Approach for REST API Fuzzing
+        KextFuzz: Fuzzing macOS Kernel EXTensions on Apple Silicon via Exploiting Mitigations
+        MorFuzz: Fuzzing Processor via Runtime Instruction Morphing enhanced Synchronizable Co-simulation
+        CarpetFuzz: Automatic Program Option Constraint Extraction from Documentation for Fuzzing
+        PolyFuzz: Holistic Greybox Fuzzing of Multi-Language Systems
+        GLeeFuzz: Fuzzing WebGL Through Error Message Guided Mutation
+        autofz: Automated Fuzzer Composition at Runtime
+        Fuzztruction: Using Fault Injection-based Fuzzing to Leverage Implicit Domain Knowledge
+        DynSQL: Stateful Fuzzing for Database Management Systems with Complex and Valid SQL Query Generation
+        FuzzJIT: Oracle-Enhanced Fuzzing for JavaScript Engine JIT Compiler
+        AIFORE: Smart Fuzzing Based on Automatic Input Format Reverse Engineering
+        Automated Exploitable Heap Layout Generation for Heap Overflows Through Manipulation Distance-Guided Fuzzing
+        Bleem: Packet Sequence Oriented Fuzzing for Protocol Implementations
+        BoKASAN: Binary-only Kernel Address Sanitizer for Effective Kernel Fuzzing
+        DDRace: Finding Concurrency UAF Vulnerabilities in Linux Drivers with Directed Fuzzing
+        Forming Faster Firmware Fuzzers
+        Intender: Fuzzing Intent-Based Networking with Intent-State Transition Guidance\
+        MTSan: A Feasible and Practical Memory Sanitizer for Fuzzing COTS Binaries
+        µFUZZ: Redesign of Parallel Fuzzing using Microservice Architecture
+        HyPFuzz: Formal-Assisted Processor Fuzzing
+        Automata-Guided Control-Flow-Sensitive Fuzz Driver Generation
+        Hoedur: Embedded Firmware Fuzzing using Multi-Stream Inputs
+        ReUSB: Replay-Guided USB Driver Fuzzing
+        Systematic Assessment of Fuzzers using Mutation Analysis
+        No Linux, No Problem: Fast and Correct Windows Binary Fuzzing via Target-embedded Snapshotting
+        DAFL: Directed Grey-box Fuzzing guided by Data Dependency
+        Actor: Action-Guided Kernel Fuzzing
+        Fuzz The Power: Dual-role State Guided Black-box Fuzzing for USB Power Delivery
+    ISSTA 2023
+        Large Language Models are Zero-Shot Fuzzers: Fuzzing Deep-Learning Libraries via Large Language Models
+        GrayC: Greybox Fuzzing of Compilers and Analysers for C
+        1dFuzz: Reproduce 1-Day Vulnerabilities with Directed Differential Fuzzing
+        Automated Program Repair from Fuzzing Perspective
+        Detecting State Inconsistency Bugs in DApps via On-Chain Transaction Replay and Fuzzing
+        Fuzzing Deep Learning Compilers with HirGen
+        Fuzzing Embedded Systems using Debug Interfaces
+        Green Fuzzer Benchmarking
+        Green Fuzzing: A Saturation-Based Stopping Criterion using Vulnerability Prediction
+        Guiding Greybox Fuzzing with Mutation Testing
+        Icicle: A Re-designed Emulator for Grey-Box Firmware Fuzzing
+        ItyFuzz: Snapshot-Based Fuzzer for Smart Contract
+        Rare Path Guided Fuzzing
+    ICSE 2023
+        Evaluating and Improving Hybrid Fuzzing
+        Fuzzing Automatic Differentiation in Deep-Learning Libraries
+        JITfuzz: Coverage-guided Fuzzing for JVM Just-in-Time Compilers
+        Learning Seed-Adaptive Mutation Strategies for Greybox Fuzzing
+        Operand-Variation-Oriented Differential Analysis for Fuzzing Binding Calls in PDF Readers
+        Regression Fuzzing for Deep Learning Systems
+        Large Language Models are Few-shot Testers: Exploring LLM-based General Bug Reproduction
+        Validating SMT Solvers via Skeleton Enumeration Empowered by Historical Bug-Triggering Inputs
+    NDSS 2023
+        Assessing the Impact of Interface Vulnerabilities in Compartmentalized Software
+        FUZZILLI: Fuzzing for JavaScript JIT Compiler Vulnerabilities
+        No Grammar, No Problem: Towards Fuzzing the Linux Kernel without System-Call Descriptions
+        DARWIN: Survival of the Fittest Fuzzing Mutators
+        LOKI: State-Aware Fuzzing Framework for the Implementation of Blockchain Consensus Protocols
+        OBSan: An Out-Of-Bound Sanitizer to Harden DNN Executables
+    Euro S&P 2023 / Euro S&P Workshops 2023
+        EF/CF: High Performance Smart Contract Fuzzing for Exploit Generation
+        Fuzzing SGX Enclaves via Host Program Mutations
+        The Bandit’s States: Modeling State Selection for Stateful Network Fuzzing as Multi-armed Bandit Problem
+    ICISSP/ICPRAM 2023
+        Rainfuzz: Reinforcement-Learning Driven Heat-Maps for Boosting Coverage-Guided Fuzzing
+        SWaTEval: An Evaluation Framework for Stateful Web Application Testing
+        Evaluating the Fork-Awareness of Coverage-Guided Fuzzers
+    Others 2023
+        CIDFuzz: Fuzz testing for continuous integration
+    OOPSLA 2022
+        Satisfiability Modulo Fuzzing: A Synergistic Combination of SMT Solving and Fuzzing
+    ASE 2022
+        Effectively Generating Vulnerable Transaction Sequences in Smart Contracts with Reinforcement Learning-guided Fuzzing
+        Efficient Greybox Fuzzing to Detect Memory Errors
+        FuzzerAid: Grouping Fuzzed Crashes Based On Fault Signatures
+        Fuzzle: Making a Puzzle for Fuzzers
+        Griffin: Grammar-Free DBMS Fuzzing
+        HTFuzz: Heap Operation Sequence Sensitive Fuzzing
+        LawBreaker: An Approach for Specifying Traffic Laws and Fuzzing Autonomous Vehicles
+        QATest: A Uniform Fuzzing Framework for Question Answering Systems
+        So Many Fuzzers, So Little Time - Experience from Evaluating Fuzzers on the Contiki-NG Network (Hay)StackVirt
+        Auto Off-Target: Enabling Thorough and Scalable Testing for Complex Software Systems
+    ISSTA 2022
+        sAlmost Correct Invariants: Synthesizing Inductive Invariants by Fuzzing Proof
+        DocTer: Documentation-Guided Fuzzing for Testing Deep Learning API Functions
+        Efficient Greybox Fuzzing of Applications in Linux-based IoT Devices via Enhanced User-mode Emulation
+        MDPFuzz: Testing Models Solving Markov Decision Processes
+        PrIntFuzz: Fuzzing Linux Drivers via Automated Virtual Device Simulation
+        SLIME: Program-sensitive Energy Allocation for Fuzzing
+        SnapFuzz: High-Throughput Fuzzing of Network Applications
+        TensileFuzz: Facilitating Seed Input Generation in Fuzzing via String Constraint Solving
+        WASAI: Uncovering Vulnerabilities in Wasm Smart Contracts
+        Unicorn: Detect Runtime Error in Time-Series Databases With Hybrid Input Synthesis
+    ESEC/FSE 2022
+        Minerva: Browser API Fuzzing with Dynamic Mod-Ref Analysis
+        RoboFuzz: Fuzzing Robotic Systems over Robot Operating System (ROS) for Finding Correctness Bugs
+        SEDiff: Scope-Aware Differential Fuzzing to Test Internal Function Models in Symbolic Execution
+        Fuzzing Deep-Learning Libraries via Automated Relational API Inference
+    CCS 2022
+        DriveFuzz: Discovering Autonomous Driving Bugs through Driving Quality-Guided Fuzzing
+        JIT-Picking: Differential Fuzzing of JavaScript Engines
+        LibAFL: A Framework to Build Modular and Reusable Fuzzers
+        MC^2: Rigorous and Efficient Directed Greybox Fuzzing
+        SFuzz: Slice-based Fuzzing for Real-Time Operating Systems
+        SpecDoctor: Differential Fuzz Testing to Find Transient Execution Vulnerabilities
+    S&P 2022
+        Effective Seed Scheduling for Fuzzing with Graph Centrality Analysis
+        BEACON: Directed Grey-Box Fuzzing with Provable Path Pruning
+        JIGSAW: Efficient and Scalable Path Constraints Fuzzing
+        PATA: Fuzzing with Path Aware Taint Analysis
+        FuzzUSB: Hybrid Stateful Fuzzing of USB Gadget Stacks
+    NDSS 2022
+        Cooper: Testing the Binding Code of Scripting Languages with Cooperative Mutation
+        EMS: History-Driven Mutation for Coverage-based Fuzzing
+        Semantic-Informed Driver Fuzzing Without Both the Hardware Devices and the Emulators
+        MobFuzz: Adaptive Multi-objective Optimization in Gray-box Fuzzing
+        Context-Sensitive and Directional Concurrency Fuzzing for Data-Race Detection
+        datAFLow: Towards a Data-Flow-Guided Fuzzer
+    USENIX SEC 2022
+        SyzScope: Revealing High-Risk Security Impacts of Fuzzer-Exposed Bugs in Linux kernel
+        MundoFuzz: Hypervisor Fuzzing with Statistical Coverage Testing and Grammar Inference
+        TheHuzz: Instruction Fuzzing of Processors Using Golden-Reference Models for Finding Software-Exploitable Vulnerabilities
+        Morphuzz: Bending (Input) Space to Fuzz Virtual Devices
+        Fuzzware: Using Precise MMIO Modeling for Effective Firmware Fuzzing
+        FuzzOrigin: Detecting UXSS vulnerabilities in Browsers through Origin Fuzzing
+        Drifuzz: Harvesting Bugs in Device Drivers from Golden Seeds
+        Fuzzing Hardware Like Software
+        BrakTooth: Causing Havoc on Bluetooth Link Manager via Directed Fuzzing
+        Stateful Greybox Fuzzing
+        AmpFuzz: Fuzzing for Amplification DDoS Vulnerabilities
+        SGXFuzz: Efficiently Synthesizing Nested Structures for SGX Enclave Fuzzing
+        FRAMESHIFTER: Manipulating HTTP/2 Frame Sequences with Fuzzing
+        FIXREVERTER: A Realistic Bug Injection Methodology for Benchmarking Fuzz Testing
+        StateFuzz: System Call-Based State-Aware Linux Driver Fuzzing
+    ICSE 2022
+        μAFL: Non-intrusive Feedback-driven Fuzzing for Microcontroller Firmware
+        BeDivFuzz: Integrating Behavioral Diversity into Generator-based Fuzzing
+        CONFETTI: Amplifying Concolic Guidance for Fuzzers
+        Demystifying the Dependency Challenge in Kernel Fuzzing
+        Evaluating and Improving Neural Program-Smoothing-based Fuzzing
+        Fuzzing Class Specifications
+        GraphFuzz: Library API Fuzzing with Lifetime-aware Dataflow Graphs
+        Linear-time Temporal Logic guided Greybox Fuzzing
+        Muffin: Testing Deep Learning Libraries via Neural Architecture Fuzzing
+        One Fuzzing Strategy to Rule Them All
+        On the Reliability of Coverage-Based Fuzzer Benchmarking
+        Path Transitions Tell More: Optimizing Fuzzing Schedules via Runtime Program States
+        R2Z2: Detecting Rendering Regressions in Web Browsers through Differential Fuzz Testing
+        Semantic Image Fuzzing of AI Perception Systems
+        Free Lunch for Testing: Fuzzing Deep-Learning Libraries from Open Source
+        WindRanger: A Directed Greybox Fuzzer driven by Deviation Basic Block
+        MOREST: Model-based RESTful API Testing with Execution Feedback
+        Controlled Concurrency Testing via Periodical Scheduling
+        Combinatorial Testing of RESTful APIs
+        Automated Testing of Software that Uses Machine Learning APIs
+        FADATest: Fast and Adaptive Performance Regression Testing of Dynamic Binary Translation Systems
+        Nessie: Automatically Testing JavaScript APIs with Asynchronous Callbacks
+    SANER 2022
+        FuzzingDriver: the Missing Dictionary to Increase Code Coverage in Fuzzers
+    Others 2022
+        UltraFuzz: Towards Resource-saving in Distributed Fuzzing (TSE 2022)
+        Fuzzing with automatically controlled interleavings to detect concurrency bugs (The Journal of Systems & Software)
+        ROZZ: Property-based Fuzzing for Robotic Programs in ROS (ICRA 2022)
+        Efficient ECU Analysis Technology through Structure-aware CAN Fuzzing (Access 2022)
+        Smart Contract Fuzzing for Enterprises: The Language Agnostic Way (COMSNETS 2022)
+        spotFuzzer: Static Instrument and Fuzzing Windows COTs (2022)
+        Mutation Analysis: Answering the Fuzzing Challenge (2022)
+        SNPSFuzzer: A Fast Greybox Fuzzer for Stateful Network Protocols using Snapshots (2022)
+        Better Pay Attention Whilst Fuzzing (2022)
+        looking for lacunae in bitcoin cores fuzzing efforts
+        FEFuzzer: Hybrid Files Fuzzing Tool (2022)
+        Sydr-Fuzz: Continuous Hybrid Fuzzing and Dynamic Analysis for Security Development Lifecycle (ISPRAS Open 2022)
+        Improving HPC Security with Targeted Syscall Fuzzing (S-HPC 2022)
+    ASE 2021
+        CorbFuzz: Checking Browser Security Policies with Fuzzing
+        Scalable Fuzzing of Program Binaries with E9AFL
+        SMARTIAN : Enhancing Smart Contract Fuzzing with Static and Dynamic Data-Flow Analyses
+        Towards Systematic and Dynamic Task Allocation for Collaborative Parallel Fuzzing
+        Improving Configurability of Unit-level Continuous Fuzzing: An Industrial Case Study with SAP HANA
+        Understanding and Detecting Performance Bugs in Markdown Compilers
+        Rust Library Fuzzing via API Dependency Graph Traversal
+        InstruGuard: Find and Fix Instrumentation Errors for Coverage-based Greybox Fuzzing
+    ACSAC 2021
+        Westworld: Fuzzing-Assisted Remote Dynamic Symbolic Execution of Smart Apps on IoT Cloud Platforms
+        ICS3Fuzzer: A Framework for Discovering Protocol Implementation Bugs in ICS Supervisory Software by Fuzzing
+    SOSP 2021
+        HEALER: Relation Learning Guided Kernel Fuzzing
+    S&P 2021
+        DiFuzzRTL: Differential Fuzz Testing to Find CPU Bugs
+        STOCHFUZZ: Sound and Cost-effective Fuzzing of Stripped Binaries by Incremental and Stochastic Rewriting
+        NTFUZZ: Enabling Type-Aware Kernel Fuzzing on Windows with Static Binary Analysis
+        DIANE: Identifying Fuzzing Triggers in Apps to Generate Under-constrained Inputs for IoT Devices
+        One Engine to Fuzz 'em All: Generic Language Processor Testing with Semantic Validation
+    ISSTA 2021
+        Fuzzing SMT Solvers via Two-Dimensional Input Space Exploration
+        Gramatron: Effective Grammar-Aware Fuzzing
+        QFuzz: Quantitative Fuzzing for Side Channels
+        Seed Selection for Successful Fuzzing
+        ProFuzzBench - A Benchmark for Stateful Protocol Fuzzing
+    ESEC/FSE 2021
+        Skeletal Approximation Enumeration for SMT Solver Testing
+        Estimating Residual Risk in Greybox Fuzzing
+        HeteroFuzz: Fuzz Testing to Detect Platform Dependent Divergence for Heterogeneous Applications
+        FuzzBench: An Open Fuzzer Benchmarking Platform and Service
+    CCS 2021
+        Snipuzz: Black-box Fuzzing of IoT Firmware via Message Snippet Inference
+        Hardware Support to Improve Fuzzing Performance and Precision
+        SoFi: Reflection-Augmented Fuzzing for JavaScript Engines
+        T-Reqs: HTTP Request Smuggling with Differential Fuzzing
+        V-SHUTTLE: Scalable and Semantics-Aware Hypervisor Fuzzing
+        Same Coverage, Less Bloat: Accelerating Binary-only Fuzzing with Coverage-preserving Coverage-guided Tracing
+        Regression Greybox Fuzzing
+        SyzGen: Automated Generation of Syscall Specification of Closed-Source macOS Drivers
+    OOPSLA 2021
+        Fuzzing Channel-Based Concurrency Runtimes using Types and Effects
+        Fully Automated Functional Fuzzing of Android Apps for Detecting Non-crashing Logic Bugs
+    PLDI 2021
+        Automated Conformance Testing for JavaScript Engines via Deep Compiler Fuzzing
+    ICSE 2021
+        Fuzzing Symbolic Expressions
+        Graph-based Fuzz Testing for Deep Learning Inference Engines
+        Growing A Test Corpus with Bonsai Fuzzing
+        Industry Practice of Coverage-Guided Enterprise-Level DBMS Fuzzing
+        IntelliGen: Automatic Driver Synthesis for Fuzz Testing
+    USENIX ATC 2021
+        RIFF: Reduced Instruction Footprint for Coverage-Guided Fuzzing
+        TCP-Fuzz: Detecting Memory and Semantic Bugs in TCP Stacks with Fuzzing
+    USENIX Security 2021
+        Constraint-guided Directed Greybox Fuzzing
+        UNIFUZZ: A Holistic and Pragmatic Metrics-Driven Platform for Evaluating Fuzzers
+        Nyx: Greybox Hypervisor Fuzzing using Fast Snapshots and Affine Types
+        Breaking Through Binaries: Compiler-quality Instrumentation for Better Binary-only Fuzzing
+        The Use of Likely Invariants as Feedback for Fuzzers
+        ICSFuzz: Manipulating I/Os and Repurposing Binary Code to Enable Instrumented Fuzzing in ICS Control Applications
+        Android SmartTVs Vulnerability Discovery via Log-Guided Fuzzing
+        APICraft: Fuzz Driver Generation for Closed-source SDK Libraries
+        SyzVegas: Beating Kernel Fuzzing Odds with Reinforcement Learning
+        Token-Level Fuzzing
+    NDSS 2021
+        Favocado: Fuzzing the Binding Code of JavaScript Engines Using Semantically Correct Test Cases
+        WINNIE: Fuzzing Windows Applications with Harness Synthesis and Fast Cloning
+        PGFUZZ: Policy-Guided Fuzzing for Robotic Vehicles
+        Reinforcement Learning-based Hierarchical Seed Scheduling for Greybox Fuzzing
+    ICST 2021
+        Industrial Oriented Evaluation of Fuzzing Techniques
+        Learning-Based Fuzzing of IoT Message Broker
+        RiverFuzzRL - an open-source tool to experiment with reinforcement learning for fuzzing
+    SANER 2021
+        OTA: An Operation-oriented Time Allocation Strategy for Greybox Fuzzing
+    JFLA 2022
+        Alt-Ergo-Fuzz: A fuzzer for the Alt-Ergo SMT solver
+    Others 2021
+        FuSeBMC v. 4: Smart Seed Generation for Hybrid Fuzzing (2021)
+        REST API Fuzzing by Coverage Level Guided Blackbox Testing (2021)
+        State Selection Algorithms and Their Impact on The Performance of Stateful Network Protocol Fuzzing (2021)
+        DIAR: Removing Uninteresting Bytes from Seeds in Software Fuzzing (2021)
+        CatchBackdoor: Backdoor Testing by Critical Trojan Neural Path Identification via Differential Fuzzing (2021)
+        Emmutaler: Fuzzing the iOS Boot Loader (Thesis 2021)
+        Concolic-Fuzzing of JavaScript Programs using GraalVM and Truffle (SKILL 2021)
+        BanditFuzz: Fuzzing SMT Solvers with Multi-agent Reinforcement Learning (FM 2021)
+        My Fuzzer Beats Them All! Developing a Framework for Fair Evaluation and Comparison of Fuzzers (2021)
+        Evaluating Code Coverage for Kernel Fuzzers via Function Call Graph (Access 2021)
+        A Tight Integration of Symbolic Execution and Fuzzing (short paper 2021)
+        DeltaFuzz: Historical Version Information Guided Fuzz Testing (Journal of Computer Science and Technology 2021)
+        ovAFLow: Detecting Memory Corruption Bugs with Fuzzing-based Taint Inference (Journal of Computer Science and Technology 2021)
+        Machine Learning Guided Cross-Contract Fuzzing (2021)
+        SANRAZOR: Reducing Redundant Sanitizer Checks in C/C++ Programs (OSDI 2021)
+        webFuzz: Grey-Box Fuzzing for Web Applications (ESORICS 2021)
+        Vulnerability-Oriented Fuzz Testing for Connected Autonomous Vehicle Systems (IEEE Transactions on Reliability 2021)
+        Duo: Differential Fuzzing for Deep Learning Operators (IEEE Transactions on Reliability 2021)
+        Rtkaller: State-aware Task Generation for RTOS Fuzzing (EMSOFT 2021)
+        Neural Network Guided Evolutionary Fuzzing for Finding Traffic Violations of Autonomous Vehicles (arXiv 2021)
+        Fuzzing: Cyberphysical System Testing for Security and Dependability (Computer 2021)
+        ESRFuzzer: an enhanced fuzzing framework for physical SOHO router devices to discover multi-Type vulnerabilities (Cybersecurity 2021)
+        ICPFuzzer: proprietary communication protocol fuzzing by using machine learning and feedback strategies (Cybersecurity 2021)
+        Hashing Fuzzing: Introducing Input Diversity to Improve Crash Detection (TSE 2021)
+        KCFuzz: Directed Fuzzing Based on Keypoint Coverage (ICAIS 2021)
+        Token-Level Fuzzing (WiSec'21)
+        SHFuzz: A hybrid fuzzing method assisted by static analysis for binary programs (China Communications 2021)
+        RapidFuzz: Accelerating fuzzing via Generative Adversarial Networks (Neurocomputing 2021)
+        HFContractFuzzer: Fuzzing Hyperledger Fabric Smart Contracts for Vulnerability Detection (EASE 2021)
+        Fuzzing With Optimized Grammar-Aware Mutation Strategies (Access 2021)
+        FIRM-COV: High-Coverage Greybox Fuzzing for IoT Firmware via Optimized Process Emulation (Access 2021)
+        Extended grammar-based fuzzing algorithm for JavaScript Engines (2021)
+        CoCoFuzzing: Testing Neural Code Models with Coverage-Guided Fuzzing (2021)
+        FUZZOLIC: Mixing fuzzing and concolic execution (Computers&Security 2021)
+        DirectFuzz: Automated Test Generation for RTL Designs using Directed Graybox Fuzzing (DAC 2021)
+        CollabFuzz: A Framework for Collaborative Fuzzing (EuroSec 2021)
+        HDR-Fuzz: Detecting Buffer Overruns using AddressSanitizer Instrumentation and Fuzzing (2021)
+        Unleashing Fuzzing Through Comprehensive, Efficient, and Faithful Exploitable-Bug Exposing (2021)
+        Improving Web Application Vulnerability Detection Leveraging Ensemble Fuzzing (ENASE 2021)
+        Coverage-guided binary fuzzing with rev.ng and llvm libfuzzer
+        An Empirical Study of OSS-Fuzz Bugs (MSR 2021)
+        MooFuzz: Many-Objective Optimization Seed Schedule for Fuzzer (Mathematics 2021)
+        PMFuzz: Test Case Generation for Persistent Memory Programs (ASPLOS 2021)
+        A Priority Based Path Searching Method for Improving Hybrid Fuzzing (Computers & Security 2021)
+        CMFuzz: context-aware adaptive mutation for fuzzers (Empirical Software Engineering 2021)
+        Refined Grey-Box Fuzzing with Sivo (arXiv 2021)
+        Constructing More Complete Control Flow Graphs Utilizing Directed Gray-Box Fuzzing (MDPI 2021)
+        Symbolic Security Predicates: Hunt Program Weaknesses (ISPRAS Open 2021)
+        Towards Symbolic Pointers Reasoning in Dynamic Symbolic Execution (IVMEM 2021)
+    CCS 2020
+        FREEDOM: Engineering a State-of-the-Art DOM Fuzzer
+        SQUIRREL: Testing Database Management Systems with Language Validity and Coverage Feedback
+    ASE 2020
+        BigFuzz: Efficient Fuzz Testing for Data Analytics using Framework Abstraction
+        MoFuzz: A Fuzzer Suite for Testing Model-Driven Software Engineering Tools
+        Zeror: Speed Up Fuzzing with Coverage-sensitive Tracing and Scheduling
+        Generating Highly-structured Input Data by Combining Search-based Testing and Grammar-based Fuzzing
+    ISSTA 2020
+        Active Fuzzing for Testing and Securing Cyber-Physical Systems
+        Learning Input Tokens for Effective Fuzzing
+        WEIZZ: Automatic Grey-Box Fuzzing for Structured Binary Formats
+    ESEC/FSE 2020
+        Fuzzing: On the Exponential Cost of Vulnerability Discovery
+        Boosting Fuzzer Efficiency: An Information Theoretic Perspective
+        CrFuzz: Fuzzing Multi-purpose Programs through Input Validation
+        Detecting Critical Bugs in SMT Solvers using Blackbox Mutational Fuzzing
+        Intelligent REST API Data Fuzzing
+        MTFuzz: Fuzzing with a Multi-task Neural Network
+    ACSAC 2020
+        DPIFuzz: A Differential Fuzzing Framework to Detect DPI Elusion Strategies for QUIC
+        Cupid: Automatic Fuzzer Selection for Collaborative Fuzzing
+        OmniFuzz: A Flexible Framework for Expediting Bug Finding by Leveraging Past (Mis-)Behavior to Discover New Bugs
+        RUSTY: A Fuzzing Tool for Rust
+    PLDI 2020
+        Validating SMT Solvers via Semantic Fusion
+    USENIX Security 2020
+        Analysis of DTLS Implementations Using Protocol State Fuzzing
+        Frankenstein: Advanced Wireless Fuzzing to Exploit New Bluetooth Escalation Targets
+        SpecFuzz: Bringing Spectre-type vulnerabilities to the surface
+        FuzzGen: Automatic Fuzzer Generation
+        MUZZ: Thread-aware Grey-box Fuzzing for Effective Bug Hunting in Multithreaded Programs
+        Montage: A Neural Network Language Model-Guided JavaScript Engine Fuzzer
+        GREYONE: Data Flow Sensitive Fuzzing
+        FuzzGuard: Filtering out Unreachable Inputs in Directed Grey-box Fuzzing through Deep Learning
+        ParmeSan: Sanitizer-guided Greybox Fuzzing
+        EcoFuzz: Adaptive Energy-Saving Greybox Fuzzing as a Variant of the Adversarial Multi-Armed Bandit
+        FANS: Fuzzing Android Native System Services via Automated Interface Analysis
+        Fuzzing Error Handling Code using Context-Sensitive Software Fault Injection
+        USBFuzz: A Framework for Fuzzing USB Drivers by Device Emulation
+        AFL++: Combining Incremental Steps of Fuzzing Research (USENIX Woot2020)
+    ICSE 2020
+        Typestate-Guided Fuzzer for Discovering Use-after-Free Vulnerabilities
+        MemLock: Memory Usage Guided Fuzzing
+        Ankou: Guiding Grey-box Fuzzing towards Combinatorial Difference
+        JVM Fuzzing for JIT-Induced Side-Channel Detection
+        Targeted Greybox Fuzzing with Static Lookahead Analysis
+        Fuzz Testing based Data Augmentation to Improve Robustness of Deep Neural Networks
+        sFuzz: An Efficient Adaptive Fuzzer for Solidity Smart Contracts
+        HyDiff: Hybrid Differential Software Analysis
+        Automatically Testing String Solvers
+    NDSS 2020
+        HYPER-CUBE: High-Dimensional Hypervisor Fuzzing
+        HotFuzz: Discovering Algorithmic Denial-of-Service Vulnerabilities Through Guided Micro-Fuzzing
+        HFL: Hybrid Fuzzing on the Linux Kernel
+        Not All Coverage Measurements Are Equal: Fuzzing by Coverage Accounting for Input Prioritization
+    S&P 2020
+        SAVIOR: Towards Bug-Driven Hybrid Testing
+        RetroWrite: Statically Instrumenting COTS Binaries for Fuzzing and Sanitization
+        IJON: Exploring Deep State Spaces via Fuzzing
+        PANGOLIN: Incremental Hybrid Fuzzing with Polyhedral Path Abstraction
+        KRace: Data Race Fuzzing for Kernel File Systems
+        Fuzzing JavaScript Engines with Aspect-preserving Mutation
+    SANER 2020
+        ETHPLOIT: From Fuzzing to Efficient Exploit Generation against Smart Contracts
+        Sequence directed hybrid fuzzing
+    ICST 2020
+        Language-Agnostic Generation of Compilable Test Programs
+        ct-fuzz: Fuzzing for Timing Leaks
+        AFLNET: A Greybox Fuzzer for Network Protocols
+    ASIACCS 2020
+        PathAFL: Path-Coverage Assisted Fuzzing
+    Others 2020
+        Reproducible Crashes: Fuzzing Pharo by Mutating the Test Methods (IWST20 2020)
+        Finding race conditions in Kernels: from fuzzing to symbolic exection (2020)
+        BanditFuzz: Fuzzing SMT Solvers with Reinforcement Learning (2020)
+        Fuzzing Technique in Web Applications and Beyond (MCTE 2020)
+        Vulnerability Detection in SIoT Applications: A Fuzzing Method on their Binaries (IEEE Transactions on Network Science and Engineering 2020)
+        MaxAFL: Maximizing Code Coverage with a Gradient-Based Optimization Technique (Electronics 2020)
+        CSEFuzz: Fuzz Testing Based on Symbolic Execution (Access 2020)
+        A Quantitative Comparison of Covera (AST 2020)
+        Finding Bugs in File Systems with an Extensible Fuzzing Framework (TOS 2020)
+        ICS Protocol Fuzzing: Coverage Guided Packet Crack and Generation (DAC 2020)
+        Finding Security Vulnerabilities in Network Protocol Implementations (Arxiv 2020)
+        Coverage Guided Differential Adversarial Testing of Deep Learning Systems
+        Fw-fuzz: A code coverage-guided fuzzing framework for network protocols on firmware
+        Greybox Fuzzing Based on Ant Colony Algorithm
+        MEUZZ: Smart Seed Scheduling for Hybrid Fuzzing
+        Binary-level Directed Fuzzing for Use-After-Free Vulnerabilities
+        Smart seed selection-based effective black box fuzzing for IIoT protocol
+        RDFuzz: Accelerating Directed Fuzzing with Intertwined Schedule and Optimized Mutation
+        A deep convolution generative adversarial networks based fuzzing framework for industry control protocols
+        TOFU: Target-Oriented FUzzer
+        BaseSAFE: Baseband SAnitized Fuzzing through Emulation
+        Sydr: Cutting Edge Dynamic Symbolic Execution (ISPRAS Open 2020)
+    ACSAC 2019
+        Opening Pandoras Box through ATFuzzer: Dynamic Analysis of AT Interface for AndroidSmartphones
+    OOPSLA 2019
+        FuzzFactory: Domain-Specific Fuzzing with Waypoints
+        Compiler Fuzzing: How Much Does It Matter
+    TSE 2019
+        The Art, Science, and Engineering of Fuzzing: A Survey
+        Smart Greybox Fuzzing
+    Access 2019
+        NeuFuzz: Efficient Fuzzing With Deep Neural Network
+        LearnAFL: Greybox Fuzzing With Knowledge Enhancement
+    CCS 2019
+        Intriguer: Field-Level Constraint Solving for Hybrid Fuzzing
+        Learning to Fuzz from Symbolic Execution with Application to Smart Contracts
+        Matryoshka: fuzzing deeply nested branches
+        Different is Good: Detecting the Use of Uninitialized Variables through Differential Replay
+        Gollum: Modular and Greybox Exploit Generation for Heap Overflows in Interpreters
+        Poster: Fuzzing IoT Firmware via Multi-stage Message Generation
+    S&P 2019
+        NEUZZ: Efficient Fuzzing with Neural Program Smoothing
+        Fuzzing File Systems via Two-Dimensional Input Space Exploration
+        ProFuzzer: On-the-fly Input Type Probing for Better Zero-day Vulnerability Discovery
+        Razzer: Finding Kernel Race Bugs through Fuzzing
+        Full-speed Fuzzing: Reducing Fuzzing Overhead through Coverage-guided Tracing
+    USENIX Security 2019
+        MOPT: Optimize Mutation Scheduling for Fuzzers
+        Antifuzz: impeding fuzzing audits of binary executables
+        FUZZIFICATION: Anti-Fuzzing Technique
+        EnFuzz: Ensemble Fuzzing with Seed Synchronization among Diverse Fuzzers
+        GRIMOIRE : Synthesizing Structure while Fuzzing
+        RVFuzzer: Finding Input Validation Bugs in Robotic Vehicles through Control-Guided Random Testing
+        FIRM-AFL: High-Throughput Greybox Fuzzing of IoT Firmware via Augmented Process Emulation
+        Unicorefuzz: On the Viability of Emulation for Kernelspace Fuzzing
+    ASE 2019
+        Learning-Guided Network Fuzzing for Testing Cyber-Physical System Defences
+    NDSS 2019
+        REDQUEEN: Fuzzing with Input-to-State Correspondence
+        PeriScope: An Effective Probing and Fuzzing Framework for the Hardware-OS Boundary
+        Life after Speech Recognition: Fuzzing Semantic Misinterpretation for Voice Assistant Applications
+        Send Hardest Problems My Way: Probabilistic Path Prioritization for Hybrid Fuzzing
+        CodeAlchemist: Semantics-Aware Code Generation to Find Vulnerabilities in JavaScript Engines
+        NAUTILUS: Fishing for Deep Bugs with Grammars
+    ICSE 2019
+        DifFuzz: Differential Fuzzing for Side-Channel Analysis
+        Deep Differential Testing of JVM Implementations
+        REST-ler: Stateful REST API Fuzzing
+        SLF: Fuzzing without Valid Seed Inputs
+        Superion: Grammar-Aware Greybox Fuzzing
+        Hunting for bugs in code coverage tools via randomized differential testing
+    ESEC/FSE 2019
+        Cerebro: Context-aware Adaptive Fuzzing for Effective Vulnerability Detection
+        Just Fuzz It: Solving Floating-Point Constraints Using Coverage-guided Fuzzing
+        FUDGE: Fuzz Driver Generation at Scale
+    ISSTA 2019
+        Semantic Fuzzing with Zest
+        DeepHunter: A Coverage-Guided Fuzz Testing Framework for Deep Neural Networks
+        Deferred Concretization in Symbolic Execution via Fuzzing
+    PLDI 2019
+        Parser-Directed Fuzzing
+    ASIACCS 2019
+        Ptrix: Efficient Hardware-Assisted Fuzzing for COTS Binary
+        A Feature-Oriented Corpus for understanding, Evaluating and Improving Fuzz Testing
+    ICST 2019
+        MemFuzz: Using Memory Accesses to Guide Fuzzing
+        SeqFuzzer: An Industrial Protocol Fuzzing Framework in Deep Learning Perspective
+    ISSRE 2019
+        Engineering a Better Fuzzer with SynergicallyIntegrated Optimizations
+        Fuzzing Error Handling Code in Device Drivers Based on Software Fault Injection
+    Other 2019
+        Fuzz Testing of Multithreaded Applications Based on Waiting (2019)
+        Leveraging Textual Specifications for Grammar-Based Fuzzing of Network Protocols (AAAI 2019)
+        Fuzzing JavaScript Environment APIs with Interdependent Function Calls (IFM 2019)
+        DeepFuzzer: Accelerated Deep Greybox Fuzzing (TDSC 2019)
+        CAGFuzz: Coverage-Guided Adversarial Generative Fuzzing Testing of Deep Learning Systems
+        Suzzer: A Vulnerability-Guided Fuzzer Based on Deep Learning
+        ConFuz: A Concurrency Fuzzer
+        INSTRCR: Lightweight instrumentation optimization based on coverage-guided fuzz testing
+        HFuzz: Towards automatic fuzzing testing of NB-IoT core network protocols implementations
+        Study and Comparison of General Purpose Fuzzers
+        From proof-of-concept to exploitable
+        Sequence coverage directed greybox fuzzing
+        Field-aware Evolutionary Fuzzing Based on Input Specifications and Vulnerability Metrics
+        Fuzzing IPC with Knowledge Inference
+        Be Sensitive and Collaborative: Analyzing Impact of Coverage Metrics in Greybox Fuzzing
+        Hydra: An Extensible Fuzzing Framework for Finding Semantic Bugs in File Systems
+        Exploring Effective Fuzzing Strategies to Analyze Communication Protocols
+        V-Fuzz: Vulnerability-Oriented Evolutionary Fuzzing
+    S&P 2018
+        T-Fuzz: fuzzing by program transformation
+        Angora: Efficient Fuzzing by Principled Search
+        CollAFL: Path Sensitive Fuzzing
+    USENIX Security 2018
+        FUZE: Towards Facilitating Exploit Generation for Kernel Use-After-Free Vulnerabilities
+        MoonShine: Optimizing OS Fuzzer Seed Selection with Trace Distillation
+        QSYM : A Practical Concolic Execution Engine Tailored for Hybrid Fuzzing
+    CCS 2018
+        Evaluating fuzz testing
+        Hawkeye Towards a Desired Directed Grey-box Fuzzer
+        Revery: From Proof-of-Concept to Exploitable
+    NDSS 2018
+        IoTFuzzer: Discovering Memory Corruptions in IoT Through App-based Fuzzing
+        What You Corrupt Is Not What You Crash: Challenges in Fuzzing Embedded Devices
+        Enhancing Memory Error Detection for Large-Scale Applications and Fuzz Testing
+        INSTRIM Lightweight Instrumentation for Coverage-guided Fuzzing
+    ICSE 2018
+        SAFL: increasing and accelerating testing coverage with symbolic execution and guided fuzzing
+    ESEC/FSE 2018
+        Singularity: Pattern Fuzzing for Worst Case Complexity
+        PAFL: Extend Fuzzing Optimizations of Single Mode to Industrial Parallel Mode
+        FOT: A Versatile, Configurable, Extensible Fuzzing Framework
+        DLFuzz: Differential Fuzzing Testing of Deep Learning Systems
+    ASE 2018
+        ContractFuzzer: Fuzzing Smart Contracts for Vulnerability Detection
+        FairFuzz: A Targeted Mutation Strategy for Increasing Greybox Fuzz Testing Coverage
+        Differential Program Analysis with Fuzzing and Symbolic Execution
+    ISSTA 2018
+        Badger: Complexity Analysis with Fuzzing and Symbolic Execution
+        Compiler Fuzzing through Deep Learning
+        PerfFuzz: Automatically Generating Pathological Inputs
+    CAV 2018
+        StringFuzz: A fuzzer for string solvers
+    ACSAC 2018
+        TIFF: Using Input Type Inference To Improve Fuzzing
+        A Heuristic Framework to Detect Concurrency Vulnerabilities
+    ICCAD 2018
+        RFUZZ: Coverage-Directed Fuzz Testing of RTL on FPGAs
+    Other 2018
+        FuzzerGym: A Competitive Framework for Fuzzing and Learning
+        MTF-Storm: a high performance fuzzer for Modbus-TCP
+    S&P 2017
+        NEZHA: Efficient Domain-Independent Differential Testing
+        Skyfire: Data-Driven Seed Generation for Fuzzing
+    USENIX Security 2017
+        kAFL: Hardware-Assisted Feedback Fuzzing for OS Kernels
+        CAB-Fuzz: Practical Concolic Testing Techniques for COTS Operating Systems
+    CCS 2017
+        Directed Greybox Fuzzing
+        Designing New Operating Primitives to Improve Fuzzing Performance
+        DIFUZE: Interface aware fuzzing for kernel drivers
+        SemFuzz: Semantics-based Automatic Generation of Proof-of-Concept Exploits
+        SlowFuzz: Automated Domain-Independent Detection of Algorithmic Complexity Vulnerabilities
+        IMF: Inferred Model-based Fuzzer
+    NDSS 2017
+        VUzzer: Application-aware Evolutionary Fuzzing
+    ESEC/FSE 2017
+        Steelix: Program-State Based Binary Fuzzing
+    ASE 2017
+        Learn&Fuzz: Machine Learning for Input Fuzzing
+        In-memory fuzzing for binary code similarity analysis
+    ISSRE 2017
+        Chizpurfle: A Gray-Box Android Fuzzer for Vendor Service Customizations
+    Other 2017
+        Bbuzz: A Bit-aware Fuzzing Framework for Network Protocol Systematic Reverse Engineering and Analysis
+    CCS 2016
+        Coverage-based Greybox Fuzzing as Markov Chain
+        Systematic Fuzzing and Testing of TLS Libraries
+    NDSS 2016
+        Driller: Argumenting Fuzzing Through Selective Symbolic Execution
+    PLDI 2016
+        Coverage-Directed Differential Testing of JVM Implementations
+    S&P 2015
+        Program-Adaptive Mutational Fuzzing
+    USENIX Security 2015
+        Protocol State Fuzzing of TLS Implementations
+    Others
+        Test Data Generation for Stateful Network Protocol Fuzzing Using a Rule-Based State Machine
+        PULSAR: Stateful Black-Box Fuzzing of Proprietary Network Protocols
+        A Modbus-TCP Fuzzer for testing internetworked industrial systems
+        SECFUZZ: Fuzz-testing Security Protocols
+        AutoFuzz: Automated Network Protocol Fuzzing Framewor
