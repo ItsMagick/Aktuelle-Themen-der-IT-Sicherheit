@@ -9,20 +9,56 @@ jobs:
   build-and-release-presentation:
     runs-on: ubuntu-latest
     steps:
-      - name: Set up Git repository
+      - name: Checkout repository
         uses: actions/checkout@v2
-      - name: Build and release LaTeX document
-        uses: TemplatesHub/gh-action-latex-build-and-release@v2
+      - name: Set up TeX Live
+        uses: xu-cheng/latex-action@v2
         with:
-          tex-entry-point: 'Presentation'
-          pdf-name: 'Presentation'
+          extra_packages: biber
+          root_file: 'Presentation.tex'
+      - name: Compile LaTeX document (1st pass)
+        run: |
+          latexmk -pdf -interaction=nonstopmode Documentation.tex
+      - name: Run Biber
+        run: |
+          biber Documentation
+      - name: Compile LaTeX document (2nd pass)
+        run: |
+          latexmk -pdf -interaction=nonstopmode Documentation.tex
+      - name: Upload PDF to release assets
+        uses: actions/upload-release-asset@v1
+        with:
+          upload_url: ${{ github.event.release.upload_url }}
+          asset_path: Documentation.pdf
+          asset_name: Documentation.pdf
+          asset_content_type: application/pdf
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   build-and-release-paper:
     runs-on: ubuntu-latest
     steps:
-      - name: Set up Git repository
+      - name: Checkout repository
         uses: actions/checkout@v2
-      - name: Build and release LaTeX document
-        uses: TemplatesHub/gh-action-latex-build-and-release@v2
+      - name: Set up TeX Live
+        uses: xu-cheng/latex-action@v2
         with:
-          tex-entry-point: 'Documentation'
-          pdf-name: 'Documentation'
+          extra_packages: biber
+          root_file: 'Documentation.tex'
+      - name: Compile LaTeX document (1st pass)
+        run: |
+          latexmk -pdf -interaction=nonstopmode Documentation.tex
+      - name: Run Biber
+        run: |
+          biber Documentation
+      - name: Compile LaTeX document (2nd pass)
+        run: |
+          latexmk -pdf -interaction=nonstopmode Documentation.tex
+      - name: Upload PDF to release assets
+        uses: actions/upload-release-asset@v1
+        with:
+          upload_url: ${{ github.event.release.upload_url }}
+          asset_path: Documentation.pdf
+          asset_name: Documentation.pdf
+          asset_content_type: application/pdf
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
