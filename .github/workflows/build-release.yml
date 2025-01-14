@@ -15,7 +15,7 @@ jobs:
         uses: xu-cheng/latex-action@v2
         with:
           extra_packages: biber
-          root_file: 'Presentation'
+          root_file: 'Presentation.tex'
       - name: Compile LaTeX document (1st pass)
         run: |
           latexmk -pdf -interaction=nonstopmode Documentation.tex
@@ -43,7 +43,7 @@ jobs:
         uses: xu-cheng/latex-action@v2
         with:
           extra_packages: biber
-          root_file: 'Documentation'
+          root_file: 'Documentation.tex'
       - name: Compile LaTeX document (1st pass)
         run: |
           latexmk -pdf -interaction=nonstopmode Documentation.tex
