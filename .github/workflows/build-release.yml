@@ -1,0 +1,25 @@
+name: LaTeX document CD
+on:
+  release:
+    types: [created]
+jobs:
+  build-and-release-presentation:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Git repository
+        uses: actions/checkout@v2
+      - name: Build and release LaTeX document
+        uses: TemplatesHub/gh-action-latex-build-and-release@v2
+        with:
+          tex-entry-point: 'Presentation.tex'
+          pdf-name: 'Presentation'
+  build-and-release-paper:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Git repository
+        uses: actions/checkout@v2
+      - name: Build and release LaTeX document
+        uses: TemplatesHub/gh-action-latex-build-and-release@v2
+        with:
+          tex-entry-point: 'Documentation.tex'
+          pdf-name: 'Documentation'
