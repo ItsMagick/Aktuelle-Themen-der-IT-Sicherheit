@@ -1,8 +1,7 @@
 name: LaTeX document CD
 on:
-  push:
-    tags:
-      - '**'
+  release:
+    types: [created]
 jobs:
   build-and-release-presentation:
     runs-on: ubuntu-latest
