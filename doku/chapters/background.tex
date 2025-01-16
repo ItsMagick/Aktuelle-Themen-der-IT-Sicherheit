@@ -2,14 +2,34 @@
 %! Date = 11/21/24
 
 \section{Hintergrund}\label{sec:hintergrund}
+Fuzzing arbeitet durch die systematische Generierung von Eingaben für ein Programm, wobei dessen Verhalten auf unerwartete
+Ergebnisse überwacht wird.
+Die Eingaben können entweder zufällig oder anhand spezifischer Kriterien erstellt werden, mit dem Ziel, die
+Wahrscheinlichkeit des Auftretens von Fehlern zu maximieren.
+Traditionelle Fuzzing-Methoden stützen sich auf vordefinierte Testfälle, was ihre Effektivität bei der Exploration
+des Eingaberaums einschränken kann.
 \subsection{Fuzzing Herangehensweisen}\label{subsec:testing-methoden}
-\subsubsection{Black Box Fuzzing}
-\subsubsection{White Box Fuzzing}
-\subsubsection{Grey Box Fuzzing}
-
+Es gibt drei grundlegende Herangehensweisen an das Fuzzing: Black Box, White Box und Grey Box Fuzzing.
+\begin{itemize}
+    \item Black Box Fuzzing
+    \item White Box Fuzzing
+    \item Grey Box Fuzzing
+\end{itemize}
 \subsection{Sparten des Fuzzing}\label{subsec:sparten-des-fuzzing}
 \subsubsection{IoT Fuzzing}
 \subsubsection{Firmware Fuzzing}
 \subsubsection{Binary Fuzzing}
 \subsubsection{Netzwerkprotokoll Fuzzing}
 \subsubsection{Betriebssystem Fuzzing}
+\subsection{Limitationen des Fuzzing}\label{subsec:limitationen-des-fuzzign}
+Fuzzing hat einige Limitationen, die seine Effektivität einschränken können:
+\begin{enumerate}
+    \item \textit{Geringe Codeabdeckung}: Traditionelle Fuzzer scheitern oft daran, alle Ausführungspfade eines Programms zu
+    erkunden, was dazu führt, dass Schwachstellen übersehen werden.
+    \item \textit{Eingabevalidierung}: Viele Anwendungen validieren Eingaben vor der Verarbeitung, was Fuzzern den Zugang zu
+    tieferliegenden Codepfaden verwehren kann.
+    \item \textit{Effizienz}: Die zufällige Natur der Eingabegenerierung führt häufig zu einer hohen Anzahl ungültiger Testfälle,
+    was Ressourcen verschwendet.
+    \item \textit{Nichtdeterministische Programme und zustandsabhängige Systeme}: Fuzzing ist bei Programmen, die auf
+    nichtdeterministischen Eingaben basieren, ineffektiv.
+\end{enumerate}

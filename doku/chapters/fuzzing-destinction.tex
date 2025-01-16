@@ -2,8 +2,51 @@
 %! Date = 11/21/24
 
 \section{Unterscheidung von Fuzzing-Ansätzen}\label{sec:unterscheidung-von-fuzzern}
-\subsection{Input Generation}\label{subsec:input-generation}
-
+Im Folgenden werden die wesentlichen Aspekte der Fuzzing-Ansätze, basierend auf Eingabegenerierung, Intelligenz der Fuzzer
+und Explorationsstrategien, wie sie in der Arbeit von \citet{eceiza_fuzzing_2021} beschrieben sind, detailliert erläutert.
+\subsection{Eingabegenerierung}\label{subsec:input-generation}
+Die Eingabegenerierung ist entscheidend für die Effektivität des Fuzzings und kann in zwei Hauptansätze unterteilt werden:
+\begin{itemize}
+    \item Mutationsbasierte Ansätze: Diese Ansätze generieren neue Eingaben, indem bestehende Testfälle (sogenannte Seeds) 
+    verändert werden. 
+    Die Qualität des initialen Seeds ist dabei von zentraler Bedeutung, da sie direkt die Abdeckung und Wirksamkeit des 
+    Fuzzing-Prozesses beeinflusst. 
+    Die Mutation umfasst Änderungen an der ursprünglichen Eingabe, ohne dass Kenntnisse über die Eingabespezifikationen 
+    erforderlich sind, was sie für komplexe Eingabeformate geeignet macht. 
+    Allerdings kann die kontinuierliche Zunahme der Seed-Größe die Geschwindigkeit des Fuzzers beeinträchtigen. 
+    Beispiele für mutationsbasierte Fuzzer sind AFL~\cite{afl} und Angora~\cite{chen_angora_2018}.
+    \item Generierungsbasierte Methoden: Dieser Ansatz setzt Kenntnisse über die Eingabespezifikationen und Protokolle 
+    des zu testenden Systems (System Unter Test, SUT) voraus.
+    Er ist besonders wichtig, wenn gültige Eingaben für erfolgreiche Tests erforderlich sind. 
+    Generierungsbasierte Fuzzer erstellen Eingaben basierend auf vordefinierten Formaten, was zu effizienteren Tests führt, 
+    insbesondere wenn die Struktur der Eingaben eingeschränkt ist.
+\end{itemize}
 \subsection{Intelligenz des Fuzzers}\label{subsec:intelligenz-des-fuzzers}
-
+Die Intelligenz eines Fuzzers beschreibt seine Fähigkeit, die Generierung von Eingaben basierend auf Rückmeldungen aus
+vorherigen Testausführungen anzupassen.
+Fuzzer können hierbei wie folgt klassifiziert werden:
+\begin{itemize}
+    \item Intelligente Fuzzer (Smart Fuzzers): Diese passen ihre Strategien zur Eingabegenerierung auf Basis des Feedbacks
+    des SUT an.
+    Sie lernen aus den Ausgaben und dem Verhalten des SUT, wodurch sie gezielt effektivere Testfälle generieren können.
+    Intelligente Fuzzer sind in der Regel effizienter bei der Entdeckung von Schwachstellen, da sie weniger Testfälle benötigen.
+    Beispiele hierfür sind Learn\&Fuzz~\cite{godefroid2017learnfuzzmachinelearninginput} und IoTFuzzer~\cite{noauthor_iotfuzzer_nodate}.
+    \item Einfach gestrickte Fuzzer (Dumb Fuzzers): Im Gegensatz dazu nutzen dumb Fuzzer keine Rückmeldungen für die
+    Generierung neuer Eingaben.
+    Obwohl sie Tests schneller ausführen können, sind sie weniger effektiv bei der Entdeckung von Schwachstellen.
+    Ein bekanntes Beispiel für einen solchen Fuzzer ist zzuf~\cite{zzuf}.
+\end{itemize}
 \subsection{Explorationsstrategien}\label{subsec:explorationsstrategien}
+Explorationsstrategien umfassen Methoden, mit denen Fuzzer während des Tests die Codeabdeckung maximieren können. 
+Sie lassen sich wie folgt kategorisieren:
+\begin{itemize}
+    \item Abdeckungsbasierte Fuzzer (Coverage-based Fuzzers): Diese verwenden Analysetechniken, um eine maximale Abdeckung
+    verschiedener Codepfade zu erreichen.
+    Fuzzer mit hoher Abdeckung sind effektiver bei der Fehlerfindung, da sie mit minimalem Aufwand möglichst viele
+    Ausführungspfade erkunden.
+    Ein Beispiel für einen abdeckungsbasierten Fuzzer ist SAGE~\cite{godefroid_sage_2012}.
+    \item Direktive Fuzzer (Directed Fuzzers): Diese konzentrieren sich auf spezifische Teile des Codes, was zu
+    schnelleren Ergebnissen führt, da sie relevante Bereiche, wie kürzlich geänderten Code oder kritische Anwendungsbereiche,
+    gezielt adressieren.
+    Direktive Fuzzer nutzen häufig symbolische Ausführung, um ihre Eingabegenerierung zu leiten~\cite{liang_sequence_2019}.
+\end{itemize}
