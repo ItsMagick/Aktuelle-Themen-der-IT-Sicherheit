@@ -16,11 +16,38 @@ Es gibt drei grundlegende Herangehensweisen an das Fuzzing: Black Box, White Box
     \item Grey Box Fuzzing
 \end{itemize}
 \subsection{Sparten des Fuzzing}\label{subsec:sparten-des-fuzzing}
-\subsubsection{IoT Fuzzing}
-\subsubsection{Firmware Fuzzing}
-\subsubsection{Binary Fuzzing}
-\subsubsection{Netzwerkprotokoll Fuzzing}
-\subsubsection{Betriebssystem Fuzzing}
+\begin{enumerate}
+    \item \textit{IoT Fuzzing}: Das Fuzzing im Internet der Dinge (IoT) konzentriert sich auf die Sicherheitsprüfung von IoT-Geräten, die aufgrund ihrer
+    spezifischen Merkmale und ressourcenbedingten Einschränkungen häufig anfällig sind.
+    Die Sicherheitsherausforderungen im IoT unterscheiden sich signifikant von denen traditioneller IT-Systeme, da IoT-Geräte
+    oftmals über keine ausreichenden Sicherheitsmechanismen verfügen~\cite{eceiza_fuzzing_2021}.
+    \item \textit{Firmware-Fuzzing}: Firmware-Fuzzing zielt auf die Firmware von Geräten ab, die als Low-Level-Software die Hardware-Komponenten steuert.
+    Diese Methode ist besonders wichtig, da Firmware oft Schwachstellen enthält, die von Angreifern ausgenutzt werden können.
+    Die Effektivität des Fuzzings in diesem Kontext hängt von der Fähigkeit ab, Eingaben zu generieren, die mit den Funktionen
+    der Firmware interagieren.
+    Zu den Herausforderungen zählen die notwendige Kenntnis der Firmware-Struktur sowie ressourcenbedingte Einschränkungen,
+    die den Fuzzing-Prozess limitieren können~\cite{eceiza_fuzzing_2021}.
+    \item \textit{Binary-Fuzzing}: Binary-Fuzzing konzentriert sich auf die Analyse von kompilierten Binärdateien anstelle von Quellcode.
+    Diese Technik ist insbesondere für proprietäre Software ohne zugänglichen Quellcode von Bedeutung.
+    Hierbei werden zufällige oder semi-zufällige Eingaben an die Binärdateien übermittelt, um Abstürze oder unerwartetes Verhalten
+    zu detektieren.
+    Die Herausforderung besteht in der fehlenden Transparenz über die interne Funktionsweise der Binärdateien, was die Erstellung
+    effektiver Testfälle erschwert.
+    Dennoch können durch Binary-Fuzzing kritische Schwachstellen aufgedeckt werden, die mit anderen Testmethoden möglicherweise
+    unentdeckt bleiben~\cite{eceiza_fuzzing_2021}.
+    \item \textit{Netzwerkprotokoll-Fuzzing}: Das Netzwerkprotokoll-Fuzzing dient der Prüfung der Robustheit von Netzwerkprotokollen, indem fehlerhafte oder unerwartete
+    Pakete an einen Netzwerkdienst gesendet werden.
+    Diese Art des Fuzzings ist entscheidend, um Schwachstellen in Kommunikationsprotokollen zu identifizieren, die von
+    Angreifern ausgenutzt werden könnten, um unbefugten Zugriff zu erlangen oder Dienste zu stören.
+    Für die effektive Generierung von Testfällen ist ein Verständnis der Protokollspezifikationen unerlässlich, wie die Arbeit
+    betont~\cite{eceiza_fuzzing_2021}.
+    \item \textit{Betriebssystem-Fuzzing}: Das Betriebssystem-Fuzzing befasst sich mit der Sicherheitsprüfung des Betriebssystems selbst, um Schwachstellen zu identifizieren,
+    die von Schadsoftware oder böswilligen Nutzern ausgenutzt werden könnten.
+    Diese Technik ist von zentraler Bedeutung, da Sicherheitslücken auf Betriebssystemebene schwerwiegende Konsequenzen wie
+    unbefugten Zugriff oder Datenverluste nach sich ziehen können.
+    Zu den Herausforderungen zählen die hohe Komplexität der Betriebssystemarchitektur sowie die Notwendigkeit, eine umfassende
+    Abdeckung der verschiedenen Systemkomponenten zu gewährleisten~\cite{eceiza_fuzzing_2021}.
+\end{enumerate}
 \subsection{Limitationen des Fuzzing}\label{subsec:limitationen-des-fuzzign}
 Fuzzing hat einige Limitationen, die seine Effektivität einschränken können:
 \begin{enumerate}
