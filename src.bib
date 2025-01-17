@@ -541,3 +541,48 @@
 	annote = {Comment: ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering (ESEC/FSE) 2020},
 }
 
+@online{wachter_fuzzing,
+	author = {Liam Wachter},
+	title = {Fuzzing Schutzmaßnahmen},
+	date = {2020-09-01},
+	urldate = {2025-01-17},
+	url = {https://wachter-space.de/2020/09/01/fuzzing_mitigations/},
+}
+
+@inproceedings{noller_badger_2018,
+	title = {Badger: {Complexity} {Analysis} with {Fuzzing} and {Symbolic} {Execution}},
+	shorttitle = {Badger},
+	url = {http://arxiv.org/abs/1806.03283},
+	doi = {10.1145/3213846.3213868},
+	abstract = {Hybrid testing approaches that involve fuzz testing and symbolic execution have shown promising results in achieving high code coverage, uncovering subtle errors and vulnerabilities in a variety of software applications. In this paper we describe Badger - a new hybrid approach for complexity analysis, with the goal of discovering vulnerabilities which occur when the worst-case time or space complexity of an application is significantly higher than the average case. Badger uses fuzz testing to generate a diverse set of inputs that aim to increase not only coverage but also a resource-related cost associated with each path. Since fuzzing may fail to execute deep program paths due to its limited knowledge about the conditions that influence these paths, we complement the analysis with a symbolic execution, which is also customized to search for paths that increase the resource-related cost. Symbolic execution is particularly good at generating inputs that satisfy various program conditions but by itself suffers from path explosion. Therefore, Badger uses fuzzing and symbolic execution in tandem, to leverage their benefits and overcome their weaknesses. We implemented our approach for the analysis of Java programs, based on Kelinci and Symbolic PathFinder. We evaluated Badger on Java applications, showing that our approach is significantly faster in generating worst-case executions compared to fuzzing or symbolic execution on their own.},
+	urldate = {2025-01-17},
+	booktitle = {Proceedings of the 27th {ACM} {SIGSOFT} {International} {Symposium} on {Software} {Testing} and {Analysis}},
+	author = {Noller, Yannic and Kersten, Rody and Păsăreanu, Corina S.},
+	month = jul,
+	year = {2018},
+	note = {arXiv:1806.03283 [cs]},
+	keywords = {Computer Science - Software Engineering},
+	pages = {322--332},
+}
+
+@misc{she_fox_2024,
+	title = {{FOX}: {Coverage}-guided {Fuzzing} as {Online} {Stochastic} {Control}},
+	shorttitle = {{FOX}},
+	url = {http://arxiv.org/abs/2406.04517},
+	doi = {10.48550/arXiv.2406.04517},
+	abstract = {Fuzzing is an effective technique for discovering software vulnerabilities by generating random test inputs and executing them against the target program. However, fuzzing large and complex programs remains challenging due to difficulties in uncovering deeply hidden vulnerabilities. This paper addresses the limitations of existing coverage-guided fuzzers, focusing on the scheduler and mutator components. Existing schedulers suffer from information sparsity and the inability to handle fine-grained feedback metrics. The mutators are agnostic of target program branches, leading to wasted computation and slower coverage exploration. To overcome these issues, we propose an end-to-end online stochastic control formulation for coverage-guided fuzzing. Our approach incorporates a novel scheduler and custom mutator that can adapt to branch logic, maximizing aggregate edge coverage achieved over multiple stages. The scheduler utilizes fine-grained branch distance measures to identify frontier branches, where new coverage is likely to be achieved. The mutator leverages branch distance information to perform efficient and targeted seed mutations, leading to robust progress with minimal overhead. We present FOX, a proof-of-concept implementation of our control-theoretic approach, and compare it to industry-standard coverage-guided fuzzers. 6 CPU-years of extensive evaluations on the FuzzBench dataset and complex real-world programs (a total of 38 test programs) demonstrate that FOX outperforms existing state-of-the-art fuzzers, achieving average coverage improvements up to 26.45\% in real-world standalone programs and 6.59\% in FuzzBench programs over the state-of-the-art AFL++. In addition, it uncovers 20 unique bugs in popular real-world applications including eight that are previously unknown, showcasing real-world security impact.},
+	urldate = {2025-01-17},
+	publisher = {arXiv},
+	author = {She, Dongdong and Storek, Adam and Xie, Yuchong and Kweon, Seoyoung and Srivastava, Prashast and Jana, Suman},
+	month = jun,
+	year = {2024},
+	note = {arXiv:2406.04517 [cs]},
+	keywords = {Computer Science - Cryptography and Security},
+	annote = {Comment: To Appear in Proceedings of the 2024 ACM SIGSAC Conference on Computer and Communications Security (CCS '24)},
+}
+
+@online{afl_whitepaper,
+	title = {Technical "whitepaper" for afl-fuzz},
+	urldate = {2025-01-17},
+	url = {https://lcamtuf.coredump.cx/afl/technical_details.txt},
+}

@@ -49,15 +49,31 @@ Es gibt drei grundlegende Herangehensweisen an das Fuzzing: Black Box, White Box
     Abdeckung der verschiedenen Systemkomponenten zu gewährleisten~\cite{eceiza_fuzzing_2021}.
 \end{enumerate}
 \subsection{Limitationen des Fuzzing}\label{subsec:limitationen-des-fuzzign}
-Fuzzing hat einige Limitationen, die seine Effektivität einschränken können:
-\begin{enumerate}
-    \item \textit{Geringe Codeabdeckung}: Traditionelle Fuzzer scheitern oft daran, alle Ausführungspfade eines Programms zu
-    erkunden, was dazu führt, dass Schwachstellen übersehen werden.
-    \item \textit{Eingabevalidierung}: Viele Anwendungen validieren Eingaben vor der Verarbeitung, was Fuzzern den Zugang zu
-    tieferliegenden Codepfaden verwehren kann.
-    \item \textit{Effizienz}: Die zufällige Natur der Eingabegenerierung führt häufig zu einer hohen Anzahl ungültiger Testfälle,
-    was Ressourcen verschwendet.
-    \item \textit{Nichtdeterministische Programme und zustandsabhängige Systeme}: Fuzzing ist bei Programmen, die auf
-    nichtdeterministischen Eingaben basieren, ineffektiv.
+Fuzzing hat einige Limitationen, die seine Effektivität einschränken können:\newline
+\textit{Lückenhafte Codeabdeckung}:
+Komplexe Programme mit tief verschachtelten Bedingungen oder umfangreichen Verzweigungen können dazu führen, dass bestimmte
+Codepfade ungetestet bleiben.
+Dies resultiert aus der Schwierigkeit, Eingaben zu generieren, die alle möglichen Pfade durchlaufen.
+Zudem können Techniken wie Code-Obfuskation die Effektivität von Fuzzern beeinträchtigen, indem sie die Pfadanzahl
+künstlich erhöhen und somit die Analyse erschweren~\cite{wachter_fuzzing}.\newline
+\textit{Unzureichende Testfälle}:
+Die Qualität der durch Fuzzing generierten Testfälle hängt von der eingesetzten Strategie ab.
+Black-box-Fuzzing kann ineffizient sein und wichtige Fehler übersehen.
+Obwohl Gray-box-Fuzzing durch Instrumentierung versucht, ein Gleichgewicht zu finden, bleibt die Herausforderung
+bestehen, für alle Szenarien -- vor allem bei umfangreichen Systemen -- zureichende Testfälle zu generieren.\newline
+\textit{Verstehen von komplexen Codepfaden}:
+Komplexe Codepfade, insbesondere solche mit tiefen Verschachtelungen oder zahlreichen Bedingungen, stellen für Fuzzer eine
+Herausforderung dar.
+Die Pfadexplosion, also die exponentielle Zunahme möglicher Pfade, kann dazu führen, dass nicht alle relevanten Pfade
+effektiv getestet werden.
+Obwohl hybride Ansätze, die Fuzzing mit symbolischer Ausführung kombinieren, entwickelt wurden, um diese Hürde zu beheben,
+bleibt die vollständige Abdeckung komplexer Pfade eine Herausforderung~\cite{noller_badger_2018}.\newline
+\textit{Nichtdeterministische Programme und zustandsabhängige Systeme}:
+Programme, deren Verhalten von internen Zuständen oder externen Faktoren abhängt, erschweren die Anwendung von Fuzzing.
+Nichtdeterministisches Verhalten kann dazu führen, dass identische Eingaben unterschiedliche Ergebnisse produzieren, was
+die Reproduzierbarkeit von Tests beeinträchtigt.
+Zudem können zustandsabhängige Systeme, die auf spezifischen Sequenzen von Eingaben reagieren, von traditionellen
+Fuzzing-Ansätzen nur unzureichend getestet werden.
+Obwohl fortschrittliche Fuzzer versuchen, Zustandsinformationen zu integrieren, bleibt die effektive Handhabung
+nichtdeterministischer und zustandsabhängiger Systeme eine offene Forschungsfrage~\cite{she_fox_2024,pham_aflnet_2020}.
 
-\end{enumerate}
