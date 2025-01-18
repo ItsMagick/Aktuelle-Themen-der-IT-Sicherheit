@@ -16,7 +16,7 @@ Die Eingabegenerierung ist entscheidend für die Effektivität des Fuzzings und 
     Allerdings kann die kontinuierliche Zunahme der Seed-Größe die Geschwindigkeit des Fuzzers beeinträchtigen. 
     Beispiele für mutationsbasierte Fuzzer sind AFL~\cite{afl} und Angora~\cite{chen_angora_2018}.
     \item Generierungsbasierte Methoden: Dieser Ansatz setzt Kenntnisse über die Eingabespezifikationen und Protokolle 
-    des zu testenden Systems (System Unter Test, SUT) voraus.
+    des SUT voraus.
     Er ist besonders wichtig, wenn gültige Eingaben für erfolgreiche Tests erforderlich sind. 
     Generierungsbasierte Fuzzer erstellen Eingaben basierend auf vordefinierten Formaten, was zu effizienteren Tests führt, 
     insbesondere wenn die Struktur der Eingaben eingeschränkt ist.
@@ -24,17 +24,17 @@ Die Eingabegenerierung ist entscheidend für die Effektivität des Fuzzings und 
 \subsection{Intelligenz des Fuzzers}\label{subsec:intelligenz-des-fuzzers}
 Die Intelligenz eines Fuzzers beschreibt seine Fähigkeit, die Generierung von Eingaben basierend auf Rückmeldungen aus
 vorherigen Testausführungen anzupassen.
-Fuzzer können hierbei wie folgt klassifiziert werden:
+Fuzzer können hierbei wie folgt eingeteilt werden:
 \begin{itemize}
     \item Intelligente Fuzzer (Smart Fuzzers): Diese passen ihre Strategien zur Eingabegenerierung auf Basis des Feedbacks
     des SUT an.
-    Sie lernen aus den Ausgaben und dem Verhalten des SUT, wodurch sie gezielt effektivere Testfälle generieren können.
+    Sie lernen aus den Ausgaben und dem Verhalten des SUT, wodurch sie gezielt Testfälle generieren können.
     Intelligente Fuzzer sind in der Regel effizienter bei der Entdeckung von Schwachstellen, da sie weniger Testfälle benötigen.
     Beispiele hierfür sind Learn\&Fuzz~\cite{godefroid2017learnfuzzmachinelearninginput} und IoTFuzzer~\cite{noauthor_iotfuzzer_nodate}.
     \item Einfach gestrickte Fuzzer (Dumb Fuzzers): Im Gegensatz dazu nutzen dumb Fuzzer keine Rückmeldungen für die
     Generierung neuer Eingaben.
-    Obwohl sie Tests schneller ausführen können, sind sie weniger effektiv bei der Entdeckung von Schwachstellen.
-    Ein bekanntes Beispiel für einen solchen Fuzzer ist zzuf~\cite{zzuf}.
+    Obwohl sie Tests schneller ausführen und generieren können, sind sie weniger effektiv bei der Entdeckung von Schwachstellen.
+    Ein Beispiel für einen solchen Fuzzer ist zzuf~\cite{zzuf}.
 \end{itemize}
 \subsection{Explorationsstrategien}\label{subsec:explorationsstrategien}
 Explorationsstrategien umfassen Methoden, mit denen Fuzzer während des Tests die Codeabdeckung maximieren können. 

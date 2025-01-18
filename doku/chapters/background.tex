@@ -14,10 +14,17 @@ Es gibt drei grundlegende Herangehensweisen an das Fuzzing: Black Box, White Box
     \item Grey Box Fuzzing
 \end{itemize}
 \subsection{Sparten des Fuzzing}\label{subsec:sparten-des-fuzzing}
+Mit der Verbreitung von Fuzzing-Techniken in verschiedenen Anwendungsbereichen haben sich spezialisierte Sparten des Fuzzings
+entwickelt, die auf die spezifischen Anforderungen und Herausforderungen dieser Bereiche zugeschnitten sind.
+Für eine modulare Anwendung von Fuzzing-Techniken wurden bereits erste Bibliotheken und Frameworks entwickelt, die
+die Integration von Fuzzing in verschiedene Anwendungsbereiche erleichtern.
+Ein etabliertes Beispiel ist das American Fuzzy Lop (AFL)~\cite{afl} Fuzzing Framework mit der Weiterentwicklung AFL++~\cite{AFLplusplus-Woot20}.
+AFL++ wurde anschließend in der Programmiersprache Rust neu implementiert und als Bibliothek zur Entwicklung von Fuzzern
+unter dem Namen LibAFL~\cite{fioraldi_libafl_2022} veröffentlicht.
 \begin{enumerate}
     \item \textit{IoT Fuzzing}: Das Fuzzing im Internet der Dinge (IoT) konzentriert sich auf die Sicherheitsprüfung von IoT-Geräten, die aufgrund ihrer
     spezifischen Merkmale und ressourcenbedingten Einschränkungen häufig anfällig sind.
-    Die Sicherheitsherausforderungen im IoT unterscheiden sich signifikant von denen traditioneller IT-Systeme, da IoT-Geräte
+    Die Sicherheitsherausforderungen im IoT unterscheiden sich von denen traditioneller IT-Systeme, da IoT-Geräte
     oftmals über keine ausreichenden Sicherheitsmechanismen verfügen~\cite{eceiza_fuzzing_2021}.
     \item \textit{Firmware-Fuzzing}: Firmware-Fuzzing zielt auf die Firmware von Geräten ab, die als Low-Level-Software die Hardware-Komponenten steuert.
     Diese Methode ist besonders wichtig, da Firmware oft Schwachstellen enthält, die von Angreifern ausgenutzt werden können.
@@ -47,7 +54,7 @@ Es gibt drei grundlegende Herangehensweisen an das Fuzzing: Black Box, White Box
     Abdeckung der verschiedenen Systemkomponenten zu gewährleisten~\cite{eceiza_fuzzing_2021}.
 \end{enumerate}
 \subsection{Limitationen des Fuzzing}\label{subsec:limitationen-des-fuzzign}
-Fuzzing hat einige Limitationen, die seine Effektivität einschränken können:\newline
+Fuzzing hat einige Limitationen, die seine Effektivität einschränken können: \newline
 \textit{Lückenhafte Codeabdeckung}:
 Komplexe Programme mit tief verschachtelten Bedingungen oder umfangreichen Verzweigungen können dazu führen, dass bestimmte
 Codepfade ungetestet bleiben.

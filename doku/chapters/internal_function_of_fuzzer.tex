@@ -10,7 +10,7 @@ Die Funktionsweise eines Fuzzers kann im Wesentlichen fünf Komponenten (siehe A
     \item \textbf{Feedback:} Das Feedback des SUT wird verwendet, um die Testcases zu verfeinern.
     \item \textbf{System unter Test:} Stellt das zu testende Programm dar.
 \end{itemize}
-Im Fall von AFL können diese Komponenten etwas feingranularer betrachtet werden.
+Am Beispiel von AFL werden diese Komponenten jetzt etwas feingranularer betrachtet.
 Der Corpus wird in zwei Teile unterteilt: \textit{Queue} und \textit{Dictionary}~\cite{afl_whitepaper}.
 Die Queue enthält die Testcases, die noch nicht an das SUT übergeben wurden.
 Sie wird anhand der Feedbackinformationen des SUT priorisiert.
