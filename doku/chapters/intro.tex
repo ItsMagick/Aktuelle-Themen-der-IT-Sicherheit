@@ -2,6 +2,35 @@
 %! Date = 11/20/24
 
 \section{Einführung}\label{sec:introduction}
-Fuzzing ist eine automatisierte Testmethode, die darauf abzielt, Schwachstellen in Software durch die Generierung vielfältiger
-und unerwarteter Eingaben aufzudecken.
-Diese Technik ist besonders effektiv bei der Identifizierung von Abstürzen oder Verletzungen von Assertions in Programmen.
+Fuzzing ist eine Technik zur Identifikation von Sicherheitslücken und Programmfehlern in Software.
+Durch die automatisierte Generierung und Überprüfung von Eingabedaten werden Schwachstellen identifiziert.
+Im Kern basiert Fuzzing auf der systematischen oder zufälligen Erzeugung von Testdaten, die an das System unter Test (SUT) übermittelt
+werden, um dessen Verhalten unter außergewöhnlichen Bedingungen zu analysieren.
+Die Ergebnisse werden genutzt, um Abstürze, Speicherfehler oder andere unerwünschte Zustände zu detektieren.\newline
+Die Integration von Künstlicher Intelligenz (KI) und Machine Learning (ML) in das Fuzzing kann zur Verbesserung der
+Effizienz und Effektivität durch Automatisierung von Entscheidungsprozessen und Optimierung der Testdatengenerierung führen.
+LLMs wie GPT oder BERT~\cite{devlin_bert_2019} haben sich als leistungsfähig bei der Analyse und Generierung von natürlicher Sprache und
+strukturierten Daten erwiesen.\newline
+Im Kontext von Fuzzing können LLMs genutzt werden, um semantisch sinnvolle Testeingaben für Anwendungen zu generieren,
+die stark strukturierte oder grammatikabhängige Eingaben erwarten~\citet{deng_large_2023}.
+Durch ihre Fähigkeit syntaktische und semantische Abhängigkeiten in komplexen Eingabeformaten zu verstehen können LLMs helfen
+die Effizienz des Fuzzing-Prozesses zu steigern.\newline
+Auch Generative Adversarial Networks (GAN) können im Fuzzing eingesetzt werden, um realistische Testeingaben zu generieren.
+GANs bestehen aus einem Generator- und einem Diskriminator-Modell.
+Im Fuzzing-Umfeld können sie eingesetzt werden, um Eingabedaten zu erzeugen, die spezifische Eigenschaften oder Schwachstellen
+adressieren.
+Beispielsweise könnte der Generator synthetische Testfälle erzeugen, die mögliche Schwachstellen in der Eingabeverarbeitung
+eines Programms explorieren, während der Diskriminator -- in diesem Kontext das SUT mit Monitoring-Mechanismen -- die Qualität
+der erzeugten Eingaben bewertet~\citet{devlin_bert_2019}.
+Dies erlaubt die Generierung diverser und relevanter Testfälle, insbesondere für Programme mit komplexen Anforderungen.\newline
+Im Kontext des Fuzzings kann Reinforcement Learning (RL) genutzt werden, um die Sequenz von Eingaben oder Teststrategien zu optimieren.
+Hierbei wird ein Agent trainiert, der durch Interaktionen mit dem Zielprogramm lernt, Eingaben zu generieren, die mit
+höherer Wahrscheinlichkeit Schwachstellen auslösen.
+Belohnungsfunktionen können beispielsweise auf Metriken wie Codeabdeckung, Anomalien im Speicherzugriff oder spezifischen
+Abstürzen basieren~\cite{paduraru_riverfuzzrl_2021}.\newline
+Die Kombination von Fuzzing-Methoden mit KI-gestützten Ansätzen bietet Potenziale.
+Beispielsweise können durch die Nutzung von LLMs, GANs und RL neue Eingabemuster erschlossen werden, die mit traditionellen Techniken
+nur schwer zu herauszufinden.
+Existierend Herausforderungen, wie die Skalierbarkeit der Ansätze bei hochkomplexen Programmen, die hohe Rechenintensität von
+ML-Modellen sowie die Erklärbarkeit und Vertrauenswürdigkeit der generierten Ergebnisse bleiben dennoch bestehen und
+stellen ein weiteres Forschungsproblem in der Zukunft dar~\cite{ramadan_role_2024}.
