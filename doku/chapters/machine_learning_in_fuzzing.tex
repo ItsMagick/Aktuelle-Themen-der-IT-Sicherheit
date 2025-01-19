@@ -1,4 +1,47 @@
 %! Author = chaorn
 %! Date = 17.01.25
 
-\section{Machine Learning in Fuzzing}\label{sec:machine-learning-in-fuzzing}
+\section{Entwicklung von Machine Learning in Fuzzing}\label{sec:machine-learning-in-fuzzing}
+Bereits 2015 wurden erste Ansätze zur Integration von ML in Fuzzing-Prozesse vorgestellt~\cite{thuraisingham_pulsar_2015}.
+Hierzu werden Markov Ketten verwendet, um anhand von gesammeltem Netzwerkverkehr die Funktionsweise von Netzwerkprotokollen zu
+erlernen.
+Diese Arbeit adressiert die Herausforderung im Fuzzing zustandsbasierter Protokolle, bei denen die Eingaben von den
+Zuständen des Protokolls abhängen.
+Ziel ist es, die Eingaben so zu generieren, dass sie die Zustände des Protokolls korrekt abbilden und somit zu einer
+besseren Abdeckung der Protokollzustände führen.\newline
+\citet{wang_systematic_2020} liefern eine systematische Übersicht über den Einsatz von ML-Techniken im Fuzzing.
+Aktuelle Forschung konzentriert sich auf die Integration von ML-Techniken in den Fuzzing-Prozess.
+Anwendungsbereiche in denen ML bereits verwendet wird, sind die Eingabegenerierung und die Post-Fuzzing-Analyse.\newline
+\citet{saavedra_review_2019} untersuchen die Integration von ML in Fuzzing-Prozessen und heben dabei die Anwendungen in der
+Eingabegenerierung und der Post-Fuzzing-Analyse hervor.
+In der Eingabegenerierung wurden bereits Ansätze entwickelt, die auf dem Unsupervised Learning in Kombination mit
+genetischen Algorithmen basieren~\cite{saavedra_review_2019}.
+Obwohl Reinforcement Learning und Deep Learning als potenzielle Verbesserungen im Fuzzing erforscht werden, finden sie
+bislang noch keine breite Anwendung.
+Der Fokus liegt derzeit vor allem auf unüberwachten Methoden, die die größten Vorteile bieten~\cite{saavedra_review_2019}.
+Schwachstellenerkennung wird zunehmend als ein Klassifikationsproblem betrachtet, bei dem ML-Techniken helfen, Wissen aus
+großen Datensätzen mit schwachstellenbezogenen Informationen zu extrahieren.
+Dadurch können neue Muster basierend auf zuvor trainierten Modellen besser klassifiziert und vorhergesagt werden\cite{wang_systematic_2020}.\newline
+ML wird auch eingesetzt, um traditionelle Bottlenecks im Fuzzing zu beheben, wie die Mutation von Seed-Eingaben oder die Erhöhung
+der Codeabdeckung.
+Durch diese Integration werden Fuzzing-Prozesse intelligenter und effizienter~\cite{wang_systematic_2020}.\newline
+Supervised und Unsupervised Learning werden für nachgelagerte Prozesse wie die Crash-Triage und die Ursachenklassifikation
+genutzt, um die Gesamtwirkung der Fuzzing-Bemühungen zu steigern~\cite{saavedra_review_2019}.\newline
+Die Integration von ML und KI in den Fuzzing-Prozess ist ein Fortschritt in der Schwachstellenerkennung und
+Softwareprüfung.
+Durch den Einsatz von unüberwachtem Lernen zur Eingabegenerierung und die Analyse von Programmzuständen nach dem Fuzzing
+können Fuzzing-Tools effektiver gestaltet werden.
+Ein erdenkliches Forschungsthema zum Thema Machine Learning und KI in Fuzzing-Prozessen ist die Automatisierung des Lernens
+der Struktur von Eingaben und Programmzuständen ohne menschliche Intervention.
+Hierzu wäre es denkbar eine Pipeline zu entwickeln, welche zunächst mithilfe von Black-box-Techniken anhand bereits existierender
+Programmierkonventionen Eingaben generiert werden und diese an ein SUT übergeben werden.
+Das daraus resultierende Feedback wird zum Erlernen der Struktur von Eingaben entwickelt.
+Nachdem die ersten validen Eingaben generiert werden können, kann ein Mutator zur Modifikation der Eingaben verwendet werden.
+Ebenso können Gray-box techniken in diesem Schritt hergenommen werden, um die Abdeckung von Programmpfaden zu analysieren.
+Dieses Feedback kann zur feingranulareren Anpassung der Eingaben an den Mutator übergeben werden, sodass eine weitreichende
+Programmstruktur mithilfe von Reverse-Engineering-Techniken erarbeitet werden kann.
+Dies kann zum tieferen Verständnis der Programmstruktur proprietäre Systeme führen, ohne Daten über das SUT in vorhinein
+gesammelt zu haben.
+Hierzu können MLOps Ansätze~\cite{kreuzberger_machine_2023} verfolgt werden und wie in DevOps verschiedene Stufen der Kampagne definiert werden, um
+Modelle zur Analyse von Software automatisiert zu erweitern und kontinuierlich zu testen.
+Dieser Ansatz wird in künftigen Arbeiten analysiert.
