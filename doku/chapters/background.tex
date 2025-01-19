@@ -7,12 +7,20 @@ Diese Methodiken und Strategien sind entscheidend für die Effektivität des Fuz
 Identifizierung von Schwachstellen.
 Im Folgenden werden die wesentlichen und Bereiche des Fuzzings erläutert und die Limitationen des Fuzzings aufgezeigt.
 \subsection{Fuzzing Herangehensweisen}\label{subsec:testing-methoden}
-Es gibt drei grundlegende Herangehensweisen an das Fuzzing: Black Box, White Box und Grey Box Fuzzing.
-\begin{itemize}
-    \item Black Box Fuzzing
-    \item White Box Fuzzing
-    \item Grey Box Fuzzing
-\end{itemize}
+Es gibt drei grundlegende Herangehensweisen an das Fuzzing: Black-, White und Grey-box Fuzzing.\newline
+\textit{ Black-box Fuzzing} benötigt keine Kenntnisse über die internen Abläufe des SUT\@.
+Die Reaktionen des Systems auf Eingaben werden beobachtet, ohne Einblick in den Code oder die Logik des Systems zu haben.
+Diese Art des Fuzzing wird meist verwendet, wenn der Quellcode nicht verfügbar ist oder wenn eine schnelle Überprüfung der
+Systemreaktionen erforderlich ist~\cite{eceiza_improving_2023}.\newline
+\textit{ White-box Fuzzing} benötigt Gegensatz dazu den Programmcode.
+Es werden hierbei Informationen über die Struktur des Systems benötigt, um gezielt neue Eingaben zu generieren.
+Diese Fuzzer sind in der Lage, tiefere Analysen durchzuführen und spezifische Schwachstellen zu identifizieren~\cite{eceiza_improving_2023}.\newline
+\textit{ Grey-box Fuzzing}
+Grey-Box-Fuzzer kombinieren Elemente beider Ansätze.
+Sie haben ein gewisses Maß an Wissen über das SUT, wobei der Grad des Wissens variieren kann.
+Diese Fuzzer können näher am Black-box- oder White-box-Ansatz sein, abhängig von der verwendeten Technik~\cite{fuzzing_methods}.
+Am Beispiel von AFL kann die Instrumentierung des Codes und die Verwendung der Programmpfadabdeckung als Grey-box-Ansatz
+betrachtet werden.
 \subsection{Sparten des Fuzzing}\label{subsec:sparten-des-fuzzing}
 Mit der Verbreitung von Fuzzing-Techniken in verschiedenen Anwendungsbereichen haben sich spezialisierte Sparten des Fuzzings
 entwickelt, die auf die spezifischen Anforderungen und Herausforderungen dieser Bereiche zugeschnitten sind.
@@ -54,26 +62,26 @@ unter dem Namen LibAFL~\cite{fioraldi_libafl_2022} veröffentlicht.
     Abdeckung der verschiedenen Systemkomponenten zu gewährleisten~\cite{eceiza_fuzzing_2021}.
 \end{enumerate}
 \subsection{Limitationen des Fuzzing}\label{subsec:limitationen-des-fuzzign}
-Fuzzing hat einige Limitationen, die seine Effektivität einschränken können: \newline
-\textit{Lückenhafte Codeabdeckung}:
+Fuzzing hat einige Limitationen, die seine Effektivität einschränken können:\newline
+\textit{ Lückenhafte Codeabdeckung}:
 Komplexe Programme mit tief verschachtelten Bedingungen oder umfangreichen Verzweigungen können dazu führen, dass bestimmte
 Codepfade ungetestet bleiben.
 Dies resultiert aus der Schwierigkeit, Eingaben zu generieren, die alle möglichen Pfade durchlaufen.
 Zudem können Techniken wie Code-Obfuskation die Effektivität von Fuzzern beeinträchtigen, indem sie die Pfadanzahl
 künstlich erhöhen und somit die Analyse erschweren~\cite{wachter_fuzzing}.\newline
-\textit{Unzureichende Testfälle}:
+\textit{ Unzureichende Testfälle}:
 Die Qualität der durch Fuzzing generierten Testfälle hängt von der eingesetzten Strategie ab.
 Black-box-Fuzzing kann ineffizient sein und wichtige Fehler übersehen.
 Obwohl Gray-box-Fuzzing durch Instrumentierung versucht, ein Gleichgewicht zu finden, bleibt die Herausforderung
 bestehen, für alle Szenarien -- vor allem bei umfangreichen Systemen -- zureichende Testfälle zu generieren.\newline
-\textit{Verstehen von komplexen Codepfaden}:
+\textit{ Verstehen von komplexen Codepfaden}:
 Komplexe Codepfade, insbesondere solche mit tiefen Verschachtelungen oder zahlreichen Bedingungen, stellen für Fuzzer eine
 Herausforderung dar.
 Die Pfadexplosion, also die exponentielle Zunahme möglicher Pfade, kann dazu führen, dass nicht alle relevanten Pfade
 effektiv getestet werden.
 Obwohl hybride Ansätze, die Fuzzing mit symbolischer Ausführung kombinieren, entwickelt wurden, um diese Hürde zu beheben,
 bleibt die vollständige Abdeckung komplexer Pfade eine Herausforderung~\cite{noller_badger_2018}.\newline
-\textit{Nichtdeterministische Programme und zustandsabhängige Systeme}:
+\textit{ Nichtdeterministische Programme und zustandsabhängige Systeme}:
 Programme, deren Verhalten von internen Zuständen oder externen Faktoren abhängt, erschweren die Anwendung von Fuzzing.
 Nichtdeterministisches Verhalten kann dazu führen, dass identische Eingaben unterschiedliche Ergebnisse produzieren, was
 die Reproduzierbarkeit von Tests beeinträchtigt.
